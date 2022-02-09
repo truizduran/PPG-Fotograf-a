@@ -285,9 +285,6 @@ nav a:hover{
 
 @media only screen and (max-width: 480px){
 
-.mainIndex{
-    background-position-x: 680px;
-}
 
 #logo{
     padding-top: 50px;

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../media/img/PPG_ICO.ico">
+    <link rel="stylesheet" href="../style/contacto.css">
+    
+
+
+</head>
+
+<body>
+    
+    <header class="headerOficial">
+
+        <a id="logo" href="../index.html"><img src="../media/img/ppg_inicial.png"></a>
+
+        <nav>
+        <!--arranca mi navbar  -->
+            <ul>
+
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre_mi.html">Sobre Mi</a></li>
+                <li><a href="./experiencia.html">Experiencia</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+
+
+            </ul>
+        </nav>
+        <!--termina mi navbar  -->
+    </header>  
+
+<!-- inicio de formulario -->
+        
+    <main class="mainFormulario">
+        <form action="enviar.php" method="post" enctype="multipart/form-data">
+            <main class="formularioContacto">
+                <select class="usted" name="pronombre" required>
+                    <option value="Señor">Sr.</option>
+                    <option value="Señora">Sra.</option>
+                    <option value=""></option>
+                </select>
+                
+                <label for="nombre">Nombre</label>
+                
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido</label>
+                
+                <input type="text" id="apellido"
+                name="apellido" required>
+                
+                
+                <label for="email">Email</label>
+                
+                <input type="email" id="email" name="email" required>
+                
+                
+                <label for="telefono">Teléfono</label>
+                
+                <input type="number" id="telefono" name="telefono" placeholder="+549..">
+                
+                
+                <p class="motMsj">Motivo de tu mensaje:</p>
+                
+                <div class="puntos">
+                    <input class="radio radio1" type="radio" name="motivo">
+                    <label class="mot consulta" for="motivo">Consulta</label>
+                    <input class="radio radio2" type="radio" name="motivo">
+                    <label class="mot presupuesto" for="motivo">Presupuesto</label>
+                    <input class="radio radio3" type="radio" name="motivo">
+                    <label class="mot reunion" for="motivo">Reunion</label>
+                    <input class="radio radio4" type="radio" name="motivo">
+                    <label class="mot otro" for="motivo">Otro</label>        
+                </div>
+
+
+                <select class="punto2" name="motivo" required>
+                    <option value="consulta">Consulta</option>
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="reunion">Reunion</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label class="motMsj" for="mensaje">Mensaje</label>
+                <div class="msj">
+                    <textarea class="areaTexto" name="mensaje" id="" cols="50" rows="10" style="resize: none;"></textarea>
+                
+                    <input class="botEnviar" type="submit" style="width:100px; height:35px" value="Enviar"> 
+                </div>    
+            </main>  
+        </form>
+    </main>
+    <!-- fin de formulario -->
+
+
+
+    <!-- arranca mi footer -->
+<footer class="foot">
+
+        <div class="cajaDatos">
+                    
+            <div class="cajaDatos1">
+                
+                <p class="nombre">Pablo Pérez Gómez</p>
+            
+                <div class="datos">  
+                    <p><a  href="mailto:pab.perezgomez1@gmail.com">pab.perezgomez1@gmail.com</a></p> 
+                    <p><a  href="tel:+491874448521">+491874448521</a></p>
+                    
+                </div>
+            
+            </div>
+    
+            <div class="cajaIco">
+                <ul>
+                    <li><a href="https://www.instagram.com/pablopg_fotografo" target="_blank"><img src="../media/img/instagram_ico.ico" width="20px" height="80%" alt="instagram-logo"></a></li>
+                    <li><a href="https://www.facebook.com/pablo.perezgomez.14" target="_blank"><img src="../media/img/facebook_ico.ico" width="20px" height="80%" alt="facebook-logo"></a></li>
+                    <li><a  href="https://www.linkedin.com/in/pablo-perez-gomez-4783b0177" target="_blank"><img src="../media/img/Linkedin_ico.ico" width="20px" height="80%" alt="LinkedIn-logo"></a></li>
+                    <li><a  href="https://www.flickr.com/photos/pablo_pg" target="_blank"><img src="../media/img/flickr_ico.ico" width="20px" height="80%" alt="flickr-logo"></a></li>
+                </ul>
+            </div>
+        
+            <div class="cajaCopy">
+                <div>
+    
+                    <p>Copyright 2022  Tomás Ruiz Durán - Todos los derechos reservados</p>
+    
+    
+                </div> 
+            </div>
+        </div>
+    
+</footer>
+    <!-- fin del footer -->
+</body>
+</html>

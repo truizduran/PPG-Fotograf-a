@@ -1,0 +1,275 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* inicio css header nav */
+header{
+    height: 0px;
+    width: 100%;
+    background-color: #131212;
+}
+
+#logo{
+    width: 100%;
+    padding-top: 30px;
+    height: 105px;
+    
+}
+
+header a{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center; 
+}
+
+header nav{
+    width: 100%; 
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px black;
+}
+
+nav a:hover{
+    color: #808080;
+}
+
+/* fin css header nav */
+
+/* inicio css cuerpo index  */
+.mainIndex{
+    height: 90vh;
+    width: 100%;
+    background-image: url(../media/img/IMG_2120.JPG);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* fin css cuerpo index */
+
+/* inicio css footer */
+
+.foot{
+    width: 100%;
+    background-color: #131212;
+    overflow: hidden;
+    
+}
+
+.foot .cajaDatos{
+    width: 95%;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px 0px;
+    padding: 10px 10px;
+    
+}
+
+.foot .cajaDatos .cajaIco ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: left;
+    
+}
+
+
+.foot .cajaDatos .cajaIco{
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.cajaDatos .cajaDatos1 p a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    
+
+    
+}
+
+.foot .cajaDatos .cajaCopy{
+    text-align: center;
+    padding: 15px 0px;
+    color: #fff;
+    grid-column: 2/3;
+    font-size: 17px;
+    
+}
+
+
+.nombre{
+    color: #fff;
+}
+
+
+/* fin css footer */
+
+
+
+/* -----inicio media query---------- */
+/* -----inicio media query---------- */
+
+@media only screen and (min-width: 1025px){
+
+    header a img{
+        width: 440px;
+        height: 110px;
+    }
+
+    .foot .cajaDatos .cajaCopy{
+        padding-top: 0px;
+        font-size: 14px;
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    
+    
+    .mainIndex{
+        background-size: cover;
+        background-position: center
+    }
+
+    #logo{
+        padding-top: 25px;
+    }
+
+/* inicio query nav */
+
+    header nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+    }
+    nav ul{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+        height: 250px;
+        margin-right: 42px;
+        margin-top: 100px;
+        grid-column: 2/3;
+        
+    }
+
+    nav ul li a{
+        background-color: rgba(12, 12, 12, 0.7);
+        color: white;
+        text-shadow: 0px 0px 0px white;
+        
+    }
+
+    ul li a:hover{
+        color: #0000;
+    }
+
+/* fin query nav */
+
+
+/* inicio query footer */
+    .foot .cajaDatos{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+
+
+    }
+
+    .foot .cajaDatos .cajaDatos1{
+        text-align: center;
+        
+    }
+
+    .foot .cajaDatos .cajaDatos1 .nombre{
+        margin-right: 5px;
+    }
+
+    .foot .cajaDatos .cajaDatos1 .datos{
+        padding-top: 5px;
+        display: flex;
+        flex-flow: wrap column;
+        
+    }
+
+    .foot .cajaDatos .cajaIco{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 15px;
+        
+        
+    }
+
+    .foot .cajaDatos .cajaCopy{
+        padding-top: 10px;
+        font-size: 13px;
+        
+    }
+/* fin query footer */
+
+}
+
+@media only screen and (max-width: 480px){
+
+.mainIndex{
+    background-position-x: 680px;
+}
+
+#logo{
+    padding-top: 50px;
+    height: 85px;
+
+    
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+}
+
+
+
+
+
+/* ------ fin  media query-------- */
+/* ------ fin  media query-------- */

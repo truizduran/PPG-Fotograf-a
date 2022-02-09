@@ -108,11 +108,6 @@ input{
     
 }
 
-select{
-    width: 12%;
-    margin-bottom: 13px;
-    
-}
 
 label,
 .motMsj{
@@ -414,7 +409,7 @@ nav ul li a{
 }
 
 .formularioContacto{
-    height: 120vh;
+    height: 100vh;
     background-color: rgba(0,0,0,0.0) ;
     width: 0px;
     
@@ -508,7 +503,7 @@ label{
 @media only screen and (max-width: 394px){
 
     .formularioContacto{
-        height: 110vh;
+        height: 100vh;
         padding-bottom: 150px;
     }
     .areaTexto{

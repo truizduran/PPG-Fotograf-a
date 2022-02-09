@@ -69,8 +69,13 @@ nav a:hover{
     background-image: url(../media/img/IMG_2120.JPG);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    /* backface-visibility: hidden; */
+    animation: mainIndex 30s linear infinite 4s;
+    animation-timing-function: ease-in-out;
     
 }
+
 
 /* fin css cuerpo index */
 
@@ -137,6 +142,36 @@ nav a:hover{
 
 
 /* fin css footer */
+
+
+@keyframes mainIndex {
+
+        0%, 100%{
+            background-image: url(../media/img/IMG_2120.JPG);
+        }
+
+        25%{
+            background-image: url(../media/img/IMG_2624.JPG);
+        }
+
+        50%{
+            background-image: url(../media/img/IMG_5740.JPG);
+        }
+
+        75%{
+            background-image: url(../media/img/IMG_9234.JPG);
+        }
+
+        /* 100%{
+            background-image: url(../media/img/IMG_4578.JPG);
+        } */
+
+
+}
+
+
+
+
 
 
 

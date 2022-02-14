@@ -278,7 +278,7 @@ nav ul{
 
 
 .mainFormulario{
-    height: 85vh;
+    height: 120vh;
     
     
 }
@@ -307,7 +307,7 @@ nav ul{
 /* fin media query header */
 
 .formularioContacto{
-    height: 70vh;
+    height: 100vh;
     margin-top: 100px;
 
 }
@@ -503,7 +503,7 @@ label{
 @media only screen and (max-width: 394px){
 
     .formularioContacto{
-        height: 100vh;
+        height: 120vh;
         padding-bottom: 150px;
     }
     .areaTexto{
@@ -511,5 +511,8 @@ label{
         margin-left: 25px;
     }
 
+    
+
 }
+
 

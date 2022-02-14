@@ -25,10 +25,11 @@
 
 }
 
+
 header a{
     display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
+    flex-flow: wrap row ;
+    justify-content: center ;
     
 }
 
@@ -42,19 +43,24 @@ nav ul{
     flex-flow: wrap row;
     justify-content:space-evenly;
     
+    
+}
+
+.navbar{
+    display: none;
 }
 
 nav ul li{
     list-style: none;
     margin-left: 30px;
     display: inline-block;
-    
-    
+    padding-top: 10px;
+
 
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
     font-size: 23px;
     text-transform: uppercase;
@@ -117,6 +123,7 @@ nav a:hover{
     width: 100%;
     background-color: #131212;
     overflow: hidden;
+    font-family: "Montserrat', sans-serif";
 }
 
 .foot .cajaDatos{
@@ -139,6 +146,7 @@ nav a:hover{
     display: flex;
     flex-flow: wrap row;
     justify-content: left;
+    margin-top: -16px;
 }
 
 
@@ -160,6 +168,8 @@ nav a:hover{
     padding: 5px 0px;
     color: #fff;
     grid-column: 2/3;
+    font-size: 17px;
+    margin-bottom: -15px;
 }
 
 
@@ -181,10 +191,11 @@ nav a:hover{
     header a img{
         width: 440px;
         height: 110px;
-        
-
-        
+    
     }
+
+
+
     .mainSobreMi .fotoMia{
         display: flex;
         flex-wrap: wrap;
@@ -240,19 +251,23 @@ nav a:hover{
 
 .headerOficial{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: auto;
+    
 }
 
 #logo{
-    width: 50%;
-    height: 70%;
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
 }
 
 nav ul{
     display: flex;
     flex-flow: wrap row;
-    
+    justify-content:space-evenly;
+    padding-top: 15px;
+    padding-right: 20px;
 }
 
 /* fin media query header */
@@ -262,7 +277,7 @@ nav ul{
 .mainSobreMi{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    height: 125vh;
+    height: 175vh;
     
 }
 
@@ -328,7 +343,7 @@ nav ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 15px;
+        
         
         
     }
@@ -346,37 +361,44 @@ nav ul{
 @media only screen and (max-width: 480px){
 
 /* inicio media query header */
-    .headerOficial{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap column;
-        justify-content: flex-start;
-        height: 130px;
-        
-        
-        
-    }
-    
-    #logo{
-        width: 50%;
-        height: 60%;
-        padding-top: 10px;
-        
-    }
-    
-    nav ul{
-        display: flex;
-        flex-flow: wrap column;
-        padding-top: 5px;
 
-    }
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 
-    nav ul li a{
-        padding-top: 5px;
-        font-size: 15px;
-        
-        
-    }
+.headerOficial{
+    display: block;
+}
+
+nav{
+    display: none;
+}
+
+nav ul li a{
+    display: none;
+
+}
+
+header a{
+    display: none;
+    
+}
+
+.navbar{
+    display: flex;
+    
+}
+
+.navbar-toggler{
+    border: 0.4px solid white !important;
+    
+}
+
+.nav-link{
+    color: #fff !important;
+    font-size: 20px;
+}
 
 /* fin media query header */
 
@@ -385,17 +407,18 @@ nav ul{
     .mainSobreMi{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        height: 162vh;
+        height: 240vh;
         
     }
 
     .cajaMain img{
         width: 90%;
         
+        
     }
 
     .cajaMain p{
-        padding: 0px 50px 0px 50px;
+        padding: 0px 50px 150px 50px;
         font-size: 15px;
     }
 
@@ -407,21 +430,10 @@ nav ul{
         display: flex;
         flex-flow: wrap column;
         justify-content: center;
-
-
     }
 
-    .foot .cajaDatos .cajaDatos1{
-        text-align: center;
-        
-    }
-
-    .foot .cajaDatos .cajaDatos1 .nombre{
-        margin-right: 5px;
-    }
 
     .foot .cajaDatos .cajaDatos1 .datos{
-        padding-top: 5px;
         display: flex;
         flex-flow: wrap column;
         
@@ -431,9 +443,7 @@ nav ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 15px;
-        
-        
+    
     }
 
     .foot .cajaDatos .cajaCopy{
@@ -447,17 +457,41 @@ nav ul{
 @media only screen and (max-width: 380px){
 
 
+
+.navbar{
+        display: flex;
+        
+    }
+
 .mainSobreMi{
-    height: 200vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    height: 250vh;
 }
 
-.fotoMia{
-    padding-bottom: 20px;
+
+.mainSobreMi .fotoMia{
+    height: 85%;
 }
 
-.cajaMain p{
-    padding-bottom: 40px;
+.cajaMain .texto1{
     
+    border: solid white;
+}
+
+}
+
+@media only screen and (max-width: 321px){
+
+
+.mainSobreMi{
+    height: 300vh;
+}
+
+.nav-link{
+    
+    font-size: 18px;
 }
 
 }

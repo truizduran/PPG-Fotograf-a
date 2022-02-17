@@ -13,7 +13,7 @@
 
 /* inicio css header nav */
 .headerOficial{
-    height: 150px;
+    height: 170px;
     width: 100%;
     background-color: #131212;
 
@@ -48,13 +48,14 @@ nav ul li{
     list-style: none;
     margin-left: 30px;
     display: inline-block;
+    padding-top: 10px;
     
     
 
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
     font-size: 23px;
     text-transform: uppercase;
@@ -68,12 +69,16 @@ nav a:hover{
     color: #808080;
 }
 
+.navbar{
+    display: none;
+}
+
 /* fin css header nav */
 
 /* inicio css formulario */
 
 .mainFormulario{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-image: url(../media/img/IMG_5740.JPG);
     background-size: cover;
@@ -87,15 +92,16 @@ nav a:hover{
 }
 
 .formularioContacto{
-    height: 90vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
     border-radius: 13px;
-    padding: 0px 0px 0px 15px;
-    margin-top: 40px;
+    padding: 0px 15px 0px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
     
     
@@ -112,7 +118,7 @@ input{
 label,
 .motMsj{
     color: #fff;
-    
+    margin: 2px;
 }
 
 .puntos{
@@ -132,7 +138,7 @@ label,
 }
 .radio{
     justify-self: end;
-    margin-top: 3px;
+    
 }
 
 .radio1,
@@ -152,13 +158,11 @@ label,
     align-self: center;
 }
 
-textarea{
-    margin-right: 15px;
-}
 
 .punto2{
     display: none;
 }
+
 
 
 /* incio css footer */
@@ -167,6 +171,7 @@ textarea{
     width: 100%;
     background-color: #131212;
     overflow: hidden;
+    font-family: "Montserrat', sans-serif";
 }
 
 .foot .cajaDatos{
@@ -189,6 +194,7 @@ textarea{
     display: flex;
     flex-flow: wrap row;
     justify-content: left;
+    margin-top: -16px;
 }
 
 
@@ -210,6 +216,8 @@ textarea{
     padding: 5px 0px;
     color: #fff;
     grid-column: 2/3;
+    font-size: 17px;
+    margin-bottom: -15px;
 }
 
 
@@ -224,7 +232,7 @@ textarea{
 
 
 
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1020px){
 
 /* inicio media query header */
 
@@ -246,7 +254,7 @@ header a img{
 }
 
 nav ul{
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 /* fin media query header */
@@ -274,11 +282,11 @@ nav ul{
 }
 
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 930px){
 
 
 .mainFormulario{
-    height: 120vh;
+    height: auto;
     
     
 }
@@ -286,28 +294,31 @@ nav ul{
 
 /* inicio media query header */
     
-.headerOficial{
+    .headerOficial{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         height: auto;
-        height: 90px;
+        
     }
     
-#logo{
-        width: 50%;
-        height: 90%;
+    #logo{
+        width: 100%;
+        padding-top: 15px;
+        padding-right: 30px;
     }
     
-nav ul{
+    nav ul{
         display: flex;
         flex-flow: wrap row;
-        
+        justify-content:space-evenly;
+        padding-top: 15px;
+        padding-right: 20px;
     }
     
 /* fin media query header */
 
 .formularioContacto{
-    height: 100vh;
+    height: auto;
     margin-top: 100px;
 
 }
@@ -359,23 +370,27 @@ nav ul{
     font-size: 13px;
     
 }
+
+.foot .cajaDatos .cajaDatos1 a{
+    margin: 0px !important;
+}
 /* fin query footer */
 
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 485px){
 
 /* inicio media query header */
     .headerOficial{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap column;
-    justify-content: flex-start;
-    height: 130px;
+    display: block;
 
 }
-            
+
+nav{
+        display:none;
+    }
+
 #logo{
     width: 50%;
     height: 60%;
@@ -383,36 +398,52 @@ nav ul{
 
 }
             
-nav ul{
-    display: flex;
-    flex-flow: wrap column;
-    padding-top: 5px;
+header a{
+    display: none;
         
 }
         
 nav ul li a{
-    padding-top: 5px;
-    font-size: 15px;
+    display: none;
 
+}
+
+.navbar{
+    display: flex;
+    
+}
+
+.navbar-toggler{
+    border: 0.4px solid white !important;
+    
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+    color: #fff !important;
+    font-size: 20px;
 }
     
 /* fin media query header */
 
 
 .mainFormulario{
-    height: 110vh;
+    height: auto;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-    padding-bottom: 10px;
+    padding: 0px 15px 0px 15px;
+    
     
 }
 
 .formularioContacto{
-    height: 100vh;
-    background-color: rgba(0,0,0,0.0) ;
-    width: 0px;
-    
+    height: auto;
+    background: none;
+    padding: 0px !important;
+    margin: 0px !important
 }
 
 .usted{
@@ -434,10 +465,7 @@ label{
     text-align: center;
 }
 
-.areaTexto{
-    width: 370px;
-    margin-left: 7px;
-}
+
 
 .puntos{
     display: none;
@@ -502,17 +530,58 @@ label{
 
 @media only screen and (max-width: 394px){
 
+
+    .mainFormulario{
+        height: auto;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        padding: 0px 15px 0px 15px;
+        
+        
+    }
+
+    .navbar{
+        display: flex;
+        
+    }
+
     .formularioContacto{
-        height: 120vh;
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    textarea { 
+        width: 355px; 
+        height: 150px;
+    }
+
+
+
+
+    
+
+}
+
+@media only screen and (max-width: 321px){
+
+
+    .nav-link{
+        font-size: 18px;
+    }
+
+    .formularioContacto{
+        height: auto;
         padding-bottom: 150px;
     }
     .areaTexto{
-        width: 300px;
-        margin-left: 25px;
+        width: 290px;
+        margin: 0px;
     }
 
     
 
 }
+
 
 

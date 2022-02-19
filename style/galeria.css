@@ -13,7 +13,7 @@
 
 /* inicio css header nav */
 .headerOficial{
-    height: 150px;
+    height: 170px;
     width: 100%;
     background-color: #131212;
 
@@ -48,13 +48,17 @@ nav ul li{
     list-style: none;
     margin-left: 30px;
     display: inline-block;
-    
+    padding-top: 10px;  
     
 
 }
 
+.navbar{
+    display: none;
+}
+
 nav a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
     font-size: 23px;
     text-transform: uppercase;
@@ -141,6 +145,7 @@ nav a:hover{
     width: 100%;
     background-color: #131212;
     overflow: hidden;
+    font-family: "Montserrat', sans-serif";
 }
 
 .foot .cajaDatos{
@@ -163,6 +168,7 @@ nav a:hover{
     display: flex;
     flex-flow: wrap row;
     justify-content: left;
+    margin-top: -16px;
 }
 
 
@@ -184,6 +190,8 @@ nav a:hover{
     padding: 5px 0px;
     color: #fff;
     grid-column: 2/3;
+    font-size: 17px;
+    margin-bottom: -15px;
 }
 
 
@@ -215,7 +223,7 @@ nav a:hover{
 }
 
 nav ul{
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 /* inicio media query main */
@@ -266,29 +274,32 @@ nav ul{
 }
 
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 930px){
 
 
     /* inicio media query header */
     
     .headerOficial{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         height: auto;
-        height: 90px;
+        
     }
     
     #logo{
-        width: 50%;
-        height: 90%;
+        width: 100%;
+        padding-top: 15px;
+        padding-right: 30px;
     }
     
     nav ul{
         display: flex;
         flex-flow: wrap row;
-        
+        justify-content:space-evenly;
+        padding-top: 15px;
+        padding-right: 20px;
     }
-    
+
 /* fin media query header */
 
 /* inicio media query main */
@@ -404,6 +415,11 @@ nav ul{
     
 }
 
+.cajaDatos .cajaDatos1 p a{
+    margin-right: 0px !important;
+
+}
+
 .foot .cajaDatos .cajaIco{
     display: flex;
     flex-wrap: wrap;
@@ -423,41 +439,47 @@ nav ul{
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 485px){
 
     /* inicio media query header */
-            .headerOficial{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap column;
-                justify-content: flex-start;
-                height: 130px;
-                
-                
-                
-            }
-            
-            #logo{
-                width: 50%;
-                height: 60%;
-                padding-top: 10px;
-                
-            }
-            
-            nav ul{
-                display: flex;
-                flex-flow: wrap column;
-                padding-top: 5px;
-        
-            }
-        
-            nav ul li a{
-                padding-top: 5px;
-                font-size: 15px;
-                
-                
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    .headerOficial{
+        display: block;
+    }
+    
+    nav{
+                display: none;
             }
     
+    nav ul li a{
+                display: none;
+            }
+    
+    header a{
+                display: none;
+            }
+    
+    .navbar{
+                display: flex;
+                
+            }
+            
+    .navbar-toggler{
+                border: 0.4px solid white !important;
+                
+            }
+            
+    .nav-link{
+                text-transform: uppercase;
+                font-family: "Montserrat', sans-serif";
+                text-shadow: 1px 2px 2px grey;
+                color: #fff !important;
+                font-size: 20px;
+            }
 /* fin media query header */
 
 /* inicio media query main */
@@ -574,6 +596,8 @@ nav ul{
     
 }
 
+
+
 .foot .cajaDatos .cajaCopy{
     padding-top: 10px;
     font-size: 13px;
@@ -583,6 +607,11 @@ nav ul{
 }
 
 @media only screen and (max-width: 380px){
+
+    .navbar{
+        display: flex;
+        
+    }
 
     .mainGaleria{
         height: 200vh ;

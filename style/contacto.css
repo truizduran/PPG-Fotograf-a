@@ -549,10 +549,11 @@ label{
     .formularioContacto{
         height: auto;
         padding-bottom: 150px;
+        
     }
 
     textarea { 
-        width: 355px; 
+        width: 350px; 
         height: 150px;
     }
 

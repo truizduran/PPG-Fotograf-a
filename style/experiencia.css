@@ -402,28 +402,28 @@ html, body {
     overflow-x: hidden !important;
 }
 
-        .headerOficial{
-            display: block;
-        }
+.headerOficial{
+    display: block;
+}
 
-        nav{
+nav{
             display: none;
         }
 
-        nav ul li a{
+nav ul li a{
             display: none;
         }
 
-        header a{
+header a{
             display: none;
         }
 
-        .navbar{
+.navbar{
             display: flex;
             
         }
         
-        .navbar-toggler{
+.navbar-toggler{
             border: 0.4px solid white !important;
             
         }

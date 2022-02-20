@@ -21,8 +21,6 @@
 
 #logo{
     width: 100%;
-    
-
 }
 
 
@@ -30,20 +28,16 @@ header a{
     display: flex;
     flex-flow: wrap row ;
     justify-content: center ;
-    
 }
 
 header nav{
     width: 100%;
-    
 }
 
 nav ul{
     display: flex;
     flex-flow: wrap row;
     justify-content:space-evenly;
-    
-    
 }
 
 .navbar{
@@ -55,8 +49,6 @@ nav ul li{
     margin-left: 30px;
     display: inline-block;
     padding-top: 10px;
-
-
 }
 
 nav a {
@@ -66,8 +58,6 @@ nav a {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
     text-shadow: 1px 2px 2px grey;
-    
-    
 }
 
 nav a:hover{
@@ -90,17 +80,14 @@ nav a:hover{
 .cajaMain{
     width: 50%;
     height: 100%;
-    
 }
 
 .fotoMia{
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-    
-    
+
 }
 
 .texto1{
@@ -188,64 +175,60 @@ nav a:hover{
 
 /* inicio media query main */
 
-    header a img{
-        width: 440px;
-        height: 110px;
-    
-    }
+header a img{
+    width: 440px;
+    height: 110px;
+}
 
-    .fotoMia{
-        display: flex;
-        justify-content: center;
-    }
-    
+.fotoMia{
+    display: flex;
+    justify-content: center;
+}
 
-    .mainSobreMi p{
-        width: 90%;
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
-        font-size: 25px;
-        text-align: center;
-        align-items: center;
-        
-    }
 
-    .texto1{
-        display: flex;
-        align-items: center;
-    }
+.mainSobreMi p{
+    width: 90%;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.texto1{
+    display: flex;
+    align-items: center;
+}
 
 
 /* fin media query main */
 
 /* inicio media query header */
 
-    #logo{
-        height: 60%;
-        padding-top: 15px;
-    }
+#logo{
+    height: 60%;
+    padding-top: 15px;
+}
 
-    nav ul{
-        padding-top: 5px;
-    }
+nav ul{
+    padding-top: 5px;
+}
 
 /* fin media query header */
 
 /* inicio media query footer */
 
-    .foot .cajaIco{
-        
-        display: grid;
-        flex-flow: wrap row;
-        justify-content: right;
-        
-    }
+.foot .cajaIco{
+    display: grid;
+    flex-flow: wrap row;
+    justify-content: right;
+}
 
-    .foot .cajaDatos .cajaCopy{
-        padding-top: 15px;
-        font-size: 14px;
-        
-    }
+.foot .cajaDatos .cajaCopy{
+    padding-top: 15px;
+    font-size: 14px;
+    
+}
 /* fin media query footer */
 }
 
@@ -291,8 +274,6 @@ nav ul{
 
 .cajaMain{
     width: 100%;
-    
-
 }
 
 
@@ -303,17 +284,12 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 13px;
-    
-
-
-    
 }
 
 .cajaMain p{
     margin: 20px;
     padding: 20px;
     font-size: 18px;
-
 }
 
 
@@ -322,45 +298,36 @@ nav ul{
 /*inicio footer query  */
 
 
-    .foot .cajaDatos{
-    
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
 
+.foot .cajaDatos .cajaDatos1{
+    text-align: center;
+}
 
-    }
+.foot .cajaDatos .cajaDatos1 .nombre{
+    margin-right: 5px;
+}
 
-    .foot .cajaDatos .cajaDatos1{
-        text-align: center;
-        
-    }
+.foot .cajaDatos .cajaDatos1 .datos{
+    padding-top: 5px;
+    display: flex;
+    flex-flow: wrap column;
+}
 
-    .foot .cajaDatos .cajaDatos1 .nombre{
-        margin-right: 5px;
-    }
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .foot .cajaDatos .cajaDatos1 .datos{
-        padding-top: 5px;
-        display: flex;
-        flex-flow: wrap column;
-        
-    }
-
-    .foot .cajaDatos .cajaIco{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        
-        
-    }
-
-    .foot .cajaDatos .cajaCopy{
-        padding-top: 10px;
-        font-size: 13px;
-        
-    }
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
 /* fin query footer */
 
 
@@ -415,54 +382,48 @@ header a{
 
 /* inicio media query main */
 
-    .mainSobreMi{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        height: auto;
-        
-    }
+.mainSobreMi{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+}
 
-    .cajaMain img{
-        width: 100%;
-        padding: 10px;
-        
-        
-    }
+.cajaMain img{
+    width: 100%;
+    padding: 10px;
+}
 
-    .cajaMain p{
-        padding: 0px;
-        font-size: 15px;
-    }
+.cajaMain p{
+    padding: 0px;
+    font-size: 15px;
+}
 
 /* fin media query main */
 
 /* incio media query footer */
 
-    .foot .cajaDatos{
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
-    }
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
 
 
-    .foot .cajaDatos .cajaDatos1 .datos{
-        display: flex;
-        flex-flow: wrap column;
-        
-    }
+.foot .cajaDatos .cajaDatos1 .datos{
+    display: flex;
+    flex-flow: wrap column;
+}
 
-    .foot .cajaDatos .cajaIco{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-    }
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .foot .cajaDatos .cajaCopy{
-        padding-top: 10px;
-        font-size: 13px;
-        
-    }
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
 /* fin media query footer */
 }
 
@@ -484,7 +445,6 @@ header a{
     flex-wrap: wrap;
     text-align: center;
     padding: 20px 0px 0px !important;
-    
 }
 
 main div p{
@@ -493,12 +453,10 @@ main div p{
 }
 
 .mainSobreMi .fotoMia{
-    
     padding: 10px;
 }
 
 .cajaMain .texto1{
-    
     border: solid white;
 }
 
@@ -520,8 +478,6 @@ main div p{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0px 0px;
-    
-    
 }
 
 .nav-link{
@@ -530,7 +486,6 @@ main div p{
 .fotoMia{
     margin: 0px !important;
     padding-top: 10px;
-    
 }
 
 main div p{

@@ -49,8 +49,6 @@ nav ul li{
     margin-left: 30px;
     display: inline-block;
     padding-top: 10px;  
-    
-
 }
 
 .navbar{
@@ -64,8 +62,6 @@ nav a {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
     text-shadow: 1px 2px 2px grey;
-    
-    
 }
 
 nav a:hover{
@@ -203,17 +199,16 @@ nav a:hover{
 
 
 @media only screen and (min-width: 1025px){
+
+.headerOficial{
+    height: 170px;
+}
+
+header a img{
+    width: 440px;
+    height: 110px;
     
-    .headerOficial{
-        height: 170px;
-    }
-    
-    
-    header a img{
-        width: 440px;
-        height: 110px;
-        
-    }
+}
 
 /* inicio media query header */
 
@@ -228,47 +223,43 @@ nav ul{
 
 /* inicio media query main */
 
-    .mainGaleria{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr); 
-        grid-template-rows: repeat(4, 1fr);
-    }
+.mainGaleria{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+}
 
-    
-    .foto1{
-        background-position-x: 500px;
-        
-    }
 
-    .foto3{
-        background-position: initial;
-    }
+.foto1{
+    background-position-x: 500px;
+}
 
-    .foto2{
-        background-image: url(../media/img/IMG_9710.JPG);
-        background-position: top;
-    }
+.foto3{
+    background-position: initial;
+}
 
-    .foto4{
-        background-position-x: 470px;
-    }
+.foto2{
+    background-image: url(../media/img/IMG_9710.JPG);
+    background-position: top;
+}
+
+.foto4{
+    background-position-x: 470px;
+}
 
 /* fin media query main */
 
 /* inicio media query footer */
 
 .foot .cajaIco{
-    
     display: grid;
     flex-flow: wrap row;
     justify-content: right;
-    
 }
 
 .foot .cajaDatos .cajaCopy{
     padding-top: 15px;
     font-size: 14px;
-    
 }
 /* fin media query footer */
 }
@@ -277,28 +268,28 @@ nav ul{
 @media only screen and (max-width: 930px){
 
 
-    /* inicio media query header */
+/* inicio media query header */
+
+.headerOficial{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
     
-    .headerOficial{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        height: auto;
-        
-    }
-    
-    #logo{
-        width: 100%;
-        padding-top: 15px;
-        padding-right: 30px;
-    }
-    
-    nav ul{
-        display: flex;
-        flex-flow: wrap row;
-        justify-content:space-evenly;
-        padding-top: 15px;
-        padding-right: 20px;
-    }
+}
+
+#logo{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    padding-top: 15px;
+    padding-right: 20px;
+}
 
 /* fin media query header */
 
@@ -323,8 +314,6 @@ nav ul{
     height: 100%;
     background-size: 700px 450px;
     background-repeat: no-repeat;
-    
-    
 }
 
 .foto2{
@@ -335,7 +324,6 @@ nav ul{
     background-position: center;
     background-size: 700px 450px;
     background-repeat: no-repeat;
-    
 }
 
 .foto3{
@@ -346,7 +334,6 @@ nav ul{
     background-position: top;
     background-size: 700px 450px;
     background-repeat: no-repeat;
-
 }
 
 .foto4{
@@ -390,18 +377,16 @@ nav ul{
 /*inicio footer query  */
 
 
-    .foot .cajaDatos{
-    
+.foot .cajaDatos{
+
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-
-
 }
 
 .foot .cajaDatos .cajaDatos1{
     text-align: center;
-    
+
 }
 
 .foot .cajaDatos .cajaDatos1 .nombre{
@@ -412,12 +397,10 @@ nav ul{
     padding-top: 5px;
     display: flex;
     flex-flow: wrap column;
-    
 }
 
 .cajaDatos .cajaDatos1 p a{
     margin-right: 0px !important;
-
 }
 
 .foot .cajaDatos .cajaIco{
@@ -425,14 +408,11 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
-    
-    
 }
 
 .foot .cajaDatos .cajaCopy{
     padding-top: 10px;
     font-size: 13px;
-    
 }
 /* fin query footer */
 
@@ -441,45 +421,43 @@ nav ul{
 
 @media only screen and (max-width: 485px){
 
-    /* inicio media query header */
-    html, body {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-    
-    .headerOficial{
-        display: block;
-    }
-    
-    nav{
-                display: none;
-            }
-    
-    nav ul li a{
-                display: none;
-            }
-    
-    header a{
-                display: none;
-            }
-    
-    .navbar{
-                display: flex;
-                
-            }
-            
-    .navbar-toggler{
-                border: 0.4px solid white !important;
-                
-            }
-            
-    .nav-link{
-                text-transform: uppercase;
-                font-family: "Montserrat', sans-serif";
-                text-shadow: 1px 2px 2px grey;
-                color: #fff !important;
-                font-size: 20px;
-            }
+/* inicio media query header */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.headerOficial{
+    display: block;
+}
+
+nav{
+    display: none;
+}
+
+nav ul li a{
+    display: none;
+}
+
+header a{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar-toggler{
+    border: 0.4px solid white !important;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+    color: #fff !important;
+    font-size: 20px;
+}
 /* fin media query header */
 
 /* inicio media query main */
@@ -503,8 +481,6 @@ nav ul{
     height: 100%;
     background-size: 400px 300px;
     background-repeat: no-repeat;
-    
-    
 }
 
 .foto2{
@@ -515,7 +491,6 @@ nav ul{
     background-position: center;
     background-size: 400px 300px;
     background-repeat: no-repeat;
-    
 }
 
 .foto3{
@@ -526,7 +501,6 @@ nav ul{
     background-position: top;
     background-size: 400px 300px;
     background-repeat: no-repeat;
-
 }
 
 .foto4{
@@ -592,8 +566,6 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
-    
-    
 }
 
 
@@ -601,20 +573,18 @@ nav ul{
 .foot .cajaDatos .cajaCopy{
     padding-top: 10px;
     font-size: 13px;
-    
 }
 /* fin media query footer */
 }
 
 @media only screen and (max-width: 380px){
 
-    .navbar{
-        display: flex;
-        
-    }
+.navbar{
+    display: flex;
+}
 
-    .mainGaleria{
-        height: 200vh ;
-    }
+.mainGaleria{
+    height: 200vh ;
+}
 
 }

@@ -16,32 +16,26 @@
     height: 170px;
     width: 100%;
     background-color: #131212;
-
 }
 
 #logo{
     width: 100%;
-    
-
 }
 
 header a{
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
-    
 }
 
 header nav{
     width: 100%;
-    
 }
 
 nav ul{
     display: flex;
     flex-flow: wrap row;
     justify-content:space-evenly;
-    
 }
 
 nav ul li{
@@ -49,9 +43,6 @@ nav ul li{
     margin-left: 30px;
     display: inline-block;
     padding-top: 10px;
-    
-    
-
 }
 
 nav a {
@@ -61,8 +52,6 @@ nav a {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
     text-shadow: 1px 2px 2px grey;
-    
-    
 }
 
 nav a:hover{
@@ -86,9 +75,6 @@ nav a:hover{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    
-    
-
 }
 
 .formularioContacto{
@@ -102,16 +88,12 @@ nav a:hover{
     padding: 0px 15px 0px 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
-    
-    
 }
 
 
 input{
     width: 50%;
     margin-bottom: 10px;
-    
 }
 
 
@@ -128,17 +110,13 @@ label,
     padding-bottom: 10px;
     padding-top: 5px;
     justify-items:center;
-    
-    
 }
 
 .mot{
     justify-self: start;
-    
 }
 .radio{
     justify-self: end;
-    
 }
 
 .radio1,
@@ -187,7 +165,6 @@ label,
 .foot .cajaDatos .cajaIco ul li{
     list-style: none;
     display: inline-block;
-    
 }
 
 .foot .cajaDatos .cajaDatos1 .datos{
@@ -237,15 +214,13 @@ label,
 /* inicio media query header */
 
 .headerOficial{
-        height: 170px;
-    }
-    
-    
+    height: 170px;
+}
+
 header a img{
-        width: 440px;
-        height: 110px;
-        
-    }
+    width: 440px;
+    height: 110px;
+}
 
 
 #logo{
@@ -266,18 +241,15 @@ nav ul{
 /* inicio media query footer */
 
 .foot .cajaIco{
-        
-        display: grid;
-        flex-flow: wrap row;
-        justify-content: right;
-        
-    }
+    display: grid;
+    flex-flow: wrap row;
+    justify-content: right;
+}
 
 .foot .cajaDatos .cajaCopy{
-        padding-top: 15px;
-        font-size: 14px;
-        
-    }
+    padding-top: 15px;
+    font-size: 14px;
+}
 /* fin media query footer */
 }
 
@@ -287,34 +259,31 @@ nav ul{
 
 .mainFormulario{
     height: auto;
-    
-    
 }
 
 
 /* inicio media query header */
-    
-    .headerOficial{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        height: auto;
-        
-    }
-    
-    #logo{
-        width: 100%;
-        padding-top: 15px;
-        padding-right: 30px;
-    }
-    
-    nav ul{
-        display: flex;
-        flex-flow: wrap row;
-        justify-content:space-evenly;
-        padding-top: 15px;
-        padding-right: 20px;
-    }
-    
+
+.headerOficial{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+}
+
+#logo{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
 /* fin media query header */
 
 .formularioContacto{
@@ -332,17 +301,13 @@ nav ul{
 
 
 .foot .cajaDatos{
-    
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-
-
 }
 
 .foot .cajaDatos .cajaDatos1{
     text-align: center;
-    
 }
 
 .foot .cajaDatos .cajaDatos1 .nombre{
@@ -353,7 +318,6 @@ nav ul{
     padding-top: 5px;
     display: flex;
     flex-flow: wrap column;
-    
 }
 
 .foot .cajaDatos .cajaIco{
@@ -361,14 +325,11 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
-    
-    
 }
 
 .foot .cajaDatos .cajaCopy{
     padding-top: 10px;
     font-size: 13px;
-    
 }
 
 .foot .cajaDatos .cajaDatos1 a{
@@ -382,40 +343,34 @@ nav ul{
 @media only screen and (max-width: 485px){
 
 /* inicio media query header */
-    .headerOficial{
+.headerOficial{
     display: block;
-
 }
 
 nav{
-        display:none;
-    }
+    display:none;
+}
 
 #logo{
     width: 50%;
     height: 60%;
     padding-top: 10px;
-
 }
-            
+
 header a{
     display: none;
-        
 }
-        
+
 nav ul li a{
     display: none;
-
 }
 
 .navbar{
     display: flex;
-    
 }
 
 .navbar-toggler{
     border: 0.4px solid white !important;
-    
 }
 
 .nav-link{
@@ -425,18 +380,16 @@ nav ul li a{
     color: #fff !important;
     font-size: 20px;
 }
-    
+
 /* fin media query header */
 
-
+/* inicio media query formulario */
 .mainFormulario{
     height: auto;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
     padding: 0px 15px 0px 15px;
-    
-    
 }
 
 .formularioContacto{
@@ -465,14 +418,11 @@ label{
     text-align: center;
 }
 
-
-
 .puntos{
     display: none;
 }
 
 .motMsj{
-    
     height: 25px;
 }
 
@@ -482,7 +432,7 @@ label{
     align-self: center;
     margin-bottom: 30px;
 }
-
+/* fin media query formulario */
 
 
 /* incio media query footer */
@@ -491,13 +441,10 @@ label{
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-
-
 }
 
 .foot .cajaDatos .cajaDatos1{
     text-align: center;
-    
 }
 
 .foot .cajaDatos .cajaDatos1 .nombre{
@@ -508,7 +455,6 @@ label{
     padding-top: 5px;
     display: flex;
     flex-flow: wrap column;
-    
 }
 
 .foot .cajaDatos .cajaIco{
@@ -516,14 +462,11 @@ label{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
-    
-    
 }
 
 .foot .cajaDatos .cajaCopy{
     padding-top: 10px;
     font-size: 13px;
-    
 }
 /* fin media query footer */
 }
@@ -531,56 +474,48 @@ label{
 @media only screen and (max-width: 394px){
 
 
-    .mainFormulario{
-        height: auto;
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
-        padding: 0px 15px 0px 15px;
-        
-        
-    }
+.mainFormulario{
+    height: auto;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
+}
 
-    .navbar{
-        display: flex;
-        
-    }
+.navbar{
+    display: flex;
+}
 
-    .formularioContacto{
-        height: auto;
-        padding-bottom: 150px;
-        
-    }
+.formularioContacto{
+    height: auto;
+    padding-bottom: 150px;
+}
 
-    textarea { 
-        width: 350px; 
-        height: 150px;
-    }
-
-
-
-
-    
+textarea { 
+    width: 270px; 
+    height: 150px;
+    margin-left: 40px;
+}
 
 }
 
 @media only screen and (max-width: 321px){
 
 
-    .nav-link{
-        font-size: 18px;
-    }
+.nav-link{
+    font-size: 18px;
+}
 
-    .formularioContacto{
-        height: auto;
-        padding-bottom: 150px;
-    }
-    .areaTexto{
-        width: 290px;
-        margin: 0px;
-    }
+.formularioContacto{
+    height: auto;
+    padding-bottom: 150px;
+}
+textarea{
+    width: 290px;
+    margin: 0px;
+}
 
-    
+
 
 }
 

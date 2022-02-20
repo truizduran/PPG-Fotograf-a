@@ -155,21 +155,21 @@ nav a:hover{
 
 @keyframes mainIndex {
 
-        0%, 100%{
-            background-image: url(../media/img/IMG_2120.JPG);
-        }
+    0%, 100%{
+        background-image: url(../media/img/IMG_2120.JPG);
+    }
 
-        25%{
-            background-image: url(../media/img/IMG_2624.JPG);
-        }
+    25%{
+        background-image: url(../media/img/IMG_2624.JPG);
+    }
 
-        50%{
-            background-image: url(../media/img/IMG_5740.JPG);
-        }
+    50%{
+        background-image: url(../media/img/IMG_5740.JPG);
+    }
 
-        75%{
-            background-image: url(../media/img/IMG_9234.JPG);
-        }
+    75%{
+        background-image: url(../media/img/IMG_9234.JPG);
+    }
 
         /* 100%{
             background-image: url(../media/img/IMG_4578.JPG);
@@ -207,78 +207,75 @@ nav a:hover{
     height: 50px;
 }
 .container .box .title .block {
-        width: 0%;
-        height: inherit;
-        background: #ffb510;
-        position: absolute;
-        animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-        display: flex;
-    }
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    display: flex;
+}
 
 .container .box .title h1 {
-        font-family: 'Poppins';
-        color: #fff;
-        font-size: 31px;
-        -webkit-animation: mainFadeIn 2s forwards;
-        -o-animation: mainFadeIn 2s forwards;
-        animation: mainFadeIn 2s forwards;
-        animation-delay: 1.6s;
-        opacity: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        position: relative;
-    }
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 31px;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: relative;
+}
 .container .box .title h1 span {
-        width:0px;
-        height: 0px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        background: #ffb510;
-        -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 2s;
-        margin-left: 5px;
-        margin-bottom: -6px;
-        position: absolute;
-        bottom: 13px;
-        right: -12px;
-        
-    }
+    width:0px;
+    height: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffb510;
+    -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+    animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-bottom: -6px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+}
 
-    
-    
 
 .role {
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 30px;
-        margin-top: -10px;
-    }
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: -10px;
+}
 .role .block {
-        width: 0%;
-        height: inherit;
-        background: #e91e63;
-        position: absolute;
-        animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 2s;
-        display: flex;
-    }
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
 
 .role p {
-        animation: secFadeIn 2s forwards;
-        animation-delay: 3.2s;
-        opacity: 0;
-        font-weight: 400;
-        font-family: 'Lato';
-        color: #ffffff;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-    }
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-weight: 400;
+    font-family: 'Lato';
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
 
 
 
@@ -286,74 +283,69 @@ nav a:hover{
 
 
 @keyframes mainBlock {
-    0% {
-        width: 0%;
-        left: 0;
-
-    }
-    50% {
-        width: 100%;
-        left: 0;
-
-    }
-    100% {
-        width: 0;
-        left: 100%;
-    }
+0% {
+    width: 0%;
+    left: 0;
+}
+50% {
+    width: 100%;
+    left: 0;
+}
+100% {
+    width: 0;
+    left: 100%;}
 }
 
 @keyframes secBlock {
-    0% {
-        width: 0%;
-        left: 0;
-
-    }
-    50% {
-        width: 100%;
-        left: 0;
-
-    }
-    100% {
-        width: 0;
-        left: 100%;
-    }
+0% {
+    width: 0%;
+    left: 0;
+}
+50% {
+    width: 100%;
+    left: 0;
+}
+100% {
+    width: 0;
+    left: 100%;
+}
 }
 
 @keyframes mainFadeIn {
-    0% {
-        opacity: 0;
+0% {
+    opacity: 0;
     }
-    100% {
-        opacity: 1;
-    }
+100% {
+    opacity: 1;
+}
 }
 
 
 @keyframes popIn {
 0% {
-        width: 0px;
-        height: 0px;
-        background: #e9d856;
-        border: 0px solid #ddd;
-        opacity: 0;
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    border: 0px solid #ddd;
+    opacity: 0;
     }
 50% {
-        width: 10px;
-        height: 10px;
-        background: #e9d856;
-        opacity: 1;
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
         bottom: 45px;
 }
 65% {
-        width: 7px;
-        height: 7px;
-        bottom: 0px;
-        width: 15px
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px
     }
 80% {
-        width: 10px;
-        height: 10px;
-        bottom: 20px
+    width: 10px;
+    height: 10px;
+    bottom: 20px
 }
 100% {
     width: 7px;
@@ -443,109 +435,101 @@ nav a:hover{
 
 
 
-    header a img{
-        width: 440px;
-        height: 110px;
-    }
+header a img{
+    width: 440px;
+    height: 110px;
+}
 
-    .foot .cajaDatos .cajaCopy{
-        padding-top: 0px;
-        font-size: 14px;
-        
-    }
+.foot .cajaDatos .cajaCopy{
+    padding-top: 0px;
+    font-size: 14px;
+    
+}
 
 }
 
 
 @media only screen and (max-width: 768px){
 
-    
-    
-    .mainIndex{
-        background-size: cover;
-        background-position: center
+
+.mainIndex{
+    background-size: cover;
+    background-position: center
     }
 
-    #logo{
-        padding-top: 25px;
+#logo{
+    padding-top: 25px;
     }
 
 /* inicio query nav */
 
-    header nav{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
-
-    }
-    nav ul{
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: space-between;
-        height: 250px;
-        margin-right: 42px;
-        margin-top: 100px;
-        grid-column: 2/3;
-        
-    }
-
-    nav ul li a{
-        background-color: rgba(12, 12, 12, 0.7);
-        color: white;
-        text-shadow: 0px 0px 0px white;
-        border: 1px solid #343a40;
+header nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav ul{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    height: 250px;
+    margin-right: 42px;
+    margin-top: 100px;
+    grid-column: 2/3;
     
-    }
+}
 
-    ul li a:hover{
-        color: #0000;
-    }
+nav ul li a{
+    background-color: rgba(12, 12, 12, 0.7);
+    color: white;
+    text-shadow: 0px 0px 0px white;
+    border: 1px solid #343a40;
+    
+}
+
+ul li a:hover{
+    color: #0000;
+}
 
 /* fin query nav */
 
 
 /* inicio query footer */
-    .foot .cajaDatos{
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
 
 
-    }
+}
 
-    .foot .cajaDatos .cajaDatos1{
-        text-align: center;
-        
-    }
+.foot .cajaDatos .cajaDatos1{
+    text-align: center;
 
-    .foot .cajaDatos .cajaDatos1 .nombre{
-        margin-right: 5px;
-    }
+}
 
-    .foot .cajaDatos .cajaDatos1 .datos{
-        padding-top: 5px;
-        display: flex;
-        flex-flow: wrap column;
-        align-items: center;
-        width: 100%;
-        
-        
-    }
+.foot .cajaDatos .cajaDatos1 .nombre{
+    margin-right: 5px;
+}
 
-    .foot .cajaDatos .cajaIco{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 15px;
-        
-        
-    }
+.foot .cajaDatos .cajaDatos1 .datos{
+    padding-top: 5px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    width: 100%;
+}
 
-    .foot .cajaDatos .cajaCopy{
-        padding-top: 10px;
-        font-size: 13px;
-        
-    }
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
 /* fin query footer */
 
 }
@@ -569,8 +553,6 @@ nav{
 
 nav ul li a{
     font-size: 20px;
-    
-    
 }
 
 .foot .cajaDatos .cajaDatos1{

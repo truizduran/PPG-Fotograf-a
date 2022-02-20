@@ -385,7 +385,7 @@ nav ul li a{
 
 /* inicio media query formulario */
 .mainFormulario{
-    height: auto;
+    height: 120vh;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
@@ -475,7 +475,7 @@ label{
 
 
 .mainFormulario{
-    height: auto;
+    height: 110vh;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
@@ -492,9 +492,9 @@ label{
 }
 
 textarea { 
-    width: 270px; 
+    width: 330px; 
     height: 150px;
-    margin-left: 40px;
+    
 }
 
 }
@@ -506,6 +506,10 @@ textarea {
     font-size: 18px;
 }
 
+.mainFormulario{
+    height: auto;
+}
+
 .formularioContacto{
     height: auto;
     padding-bottom: 150px;
@@ -514,8 +518,6 @@ textarea{
     width: 290px;
     margin: 0px;
 }
-
-
 
 }
 

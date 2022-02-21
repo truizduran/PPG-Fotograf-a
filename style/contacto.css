@@ -396,7 +396,7 @@ nav ul li a{
     height: auto;
     background: none;
     padding: 0px !important;
-    margin: 0px !important
+    margin: 0px !important;
 }
 
 .usted{
@@ -424,6 +424,10 @@ label{
 
 .motMsj{
     height: 25px;
+}
+
+textarea{
+    width:400px;
 }
 
 .punto2{
@@ -494,12 +498,11 @@ label{
 textarea { 
     width: 330px; 
     height: 150px;
-    
 }
 
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 345px){
 
 
 .nav-link{
@@ -515,7 +518,7 @@ textarea {
     padding-bottom: 150px;
 }
 textarea{
-    width: 290px;
+    width: 290px !important;
     margin: 0px;
 }
 

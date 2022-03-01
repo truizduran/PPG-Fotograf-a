@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* inicio css header nav */
+.headerOficial{
+    height: 170px;
+    width: 100%;
+    background-color: #131212;
+
+}
+
+#logo{
+    width: 100%;
+    
+
+}
+
+header a{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+header nav{
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+}
+
+.navbar{
+    display: none;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+}
+
+nav a:hover{
+    color: #808080;
+}
+
+/* fin css header nav */
+
+/* inicio css main experiencia */
+
+.mainExperiencia {
+    height: 200vh;
+    width: 100%;
+    background-color: #262525;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "foto7 textoFilo"
+    "textoPro foto8"
+    "foto9 textoMi"; 
+}
+
+.foto7 { 
+    grid-area: foto7;
+    background-image: url(../media/img/IMG_3568.JPG);
+    background-size: cover;
+}
+.textoFilo { grid-area: textoFilo; }
+.textoPro { grid-area: textoPro; }
+.foto8 { 
+    grid-area: foto8; 
+    background-image: url(../media/img/IMG_72158.JPG);
+    background-size: cover;
+}
+.foto9 { 
+    grid-area: foto9; 
+    background-image: url(../media/img/IMG_4197.JPG);
+    background-size: cover;
+}
+.textoMi { grid-area: textoMi; }
+
+h2{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.mainExperiencia p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainExperiencia h2{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.mainExperiencia p{
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+/* fin css main experiencia */
+
+
+/* incio css footer */
+
+.foot{
+    width: 100%;
+    background-color: #131212;
+    overflow: hidden;
+    font-family: "Montserrat', sans-serif";
+}
+
+.foot .cajaDatos{
+    width: 95%;
+    max-width: 100%; 
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5px 10px;
+}
+
+.foot .cajaDatos .cajaIco ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: left;
+    margin-top: -16px;
+}
+
+
+.foot .cajaIco{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: right;
+    grid-column: 3/4;
+}
+
+.cajaDatos .cajaDatos1 p a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.foot .cajaDatos .cajaCopy{
+    text-align: center;
+    padding: 5px 0px;
+    color: #fff;
+    grid-column: 2/3;
+    font-size: 17px;
+    margin-bottom: -15px;
+}
+
+
+.nombre{
+    color: #fff;
+}
+
+/* fin css footer */
+
+/* -----inicio media query---------- */
+/* -----inicio media query---------- */
+
+@media only screen and (min-width: 1025px){
+
+.headerOficial{
+    height: 170px;
+}
+
+
+header a img{
+    width: 440px;
+    height: 110px;
+}
+
+/* inicio media query header */
+
+.mainExperiencia{
+    height: auto;
+}
+
+#logo{
+    height: 60%;
+    padding-top: 15px;
+}
+
+nav ul{
+    padding-top: 5px;
+}
+
+/* fin media query header */
+
+/* inicio media query main experiencia */
+
+.foto7,
+.foto8,
+.foto9{
+    background-position: center;
+    background-size: cover;
+}
+
+.mainExperiencia h2{
+    padding-top: 40px;
+}
+
+/* inicio media query footer */
+
+.foot .cajaIco{
+    display: grid;
+    flex-flow: wrap row;
+    justify-content: right;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 15px;
+    font-size: 14px;
+}
+/* fin media query footer */
+}
+
+
+
+
+@media only screen and (max-width: 930px){
+
+
+/* inicio media query header */
+    
+.headerOficial{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+}
+
+#logo{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+/* fin media query header */
+
+/* inicio query main experiencia */
+
+.mainExperiencia{
+    height: auto;
+    
+}
+
+.foto7{
+    background-position: center;
+    height: 100%;
+}
+
+.foto8{
+    height: 100%;
+    background-position: center;
+}
+
+.foto9{
+    height: 100%;
+    background-position: center;
+}
+
+.mainExperiencia p{
+    font-size: 15px;
+}
+
+.mainExperiencia h2{
+    font-size: 30px;
+}
+
+.textoMi h2{
+    text-align: center;
+    }
+
+
+/*inicio footer query  */
+
+
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+.foot .cajaDatos .cajaDatos1{
+    text-align: center;
+}
+
+.foot .cajaDatos .cajaDatos1 .nombre{
+    margin-right: 5px;
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    padding-top: 5px;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
+/* fin query footer */
+
+
+}
+
+
+
+@media only screen and (max-width: 485px){
+
+/* inicio media query header */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.headerOficial{
+    display: block;
+}
+
+nav{
+    display: none;
+}
+
+nav ul li a{
+    display: none;
+}
+
+header a{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar-toggler{
+    border: 0.4px solid white !important;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+    color: #fff !important;
+    font-size: 20px;
+}
+
+/* fin media query header */
+
+/* inicio query main */
+
+.mainExperiencia{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto8,
+.foto7{
+    display: none;
+}
+
+.foto9{
+    width: 100%;
+    height: 500px;
+    background-image: url(../media/img/IMG_72169.jpg);
+    background-size: 350px 400px;
+    background-repeat: no-repeat;
+}
+
+.mainExperiencia p{
+    font-size: 15px;
+}
+
+.mainExperiencia h2{
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+/* fin query main experiencia */
+
+/* incio media query footer */
+
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+.foot .cajaDatos .cajaDatos1{
+    text-align: center;
+}
+
+.foot .cajaDatos .cajaDatos1 .nombre{
+    margin-right: 5px;
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    padding-top: 5px;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
+/* fin media query footer */
+}
+
+@media only screen and (max-width: 380px){
+
+.navbar{
+    display: flex;
+    
+}
+
+
+.mainExperiencia{
+    height: auto;
+}
+
+
+}

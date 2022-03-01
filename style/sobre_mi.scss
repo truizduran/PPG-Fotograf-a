@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* inicio css header nav */
+.headerOficial{
+    height: 170px;
+    width: 100%;
+    background-color: #131212;
+
+}
+
+#logo{
+    width: 100%;
+}
+
+
+header a{
+    display: flex;
+    flex-flow: wrap row ;
+    justify-content: center ;
+}
+
+header nav{
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+}
+
+.navbar{
+    display: none;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+}
+
+nav a:hover{
+    color: #808080;
+}
+
+/* fin css header nav */
+
+/*  inicio css main sobre mi */
+
+.mainSobreMi{
+    background-color: #262525;
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cajaMain{
+    width: 50%;
+    height: 100%;
+}
+
+.fotoMia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.texto1{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cajaMain p{
+    font-size: 22px;
+    padding: 85px;
+}
+
+
+
+
+/* incio css footer */
+
+.foot{
+    width: 100%;
+    background-color: #131212;
+    overflow: hidden;
+    font-family: "Montserrat', sans-serif";
+}
+
+.foot .cajaDatos{
+    width: 95%;
+    max-width: 100%; 
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5px 10px;
+}
+
+.foot .cajaDatos .cajaIco ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: left;
+    margin-top: -16px;
+}
+
+
+.foot .cajaIco{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: right;
+    grid-column: 3/4;
+}
+
+.cajaDatos .cajaDatos1 p a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.foot .cajaDatos .cajaCopy{
+    text-align: center;
+    padding: 5px 0px;
+    color: #fff;
+    grid-column: 2/3;
+    font-size: 17px;
+    margin-bottom: -15px;
+}
+
+
+.nombre{
+    color: #fff;
+}
+
+/* fin css footer */
+
+/* -----inicio media query---------- */
+/* -----inicio media query---------- */
+
+
+
+@media only screen and (min-width: 1020px){
+
+/* inicio media query main */
+
+header a img{
+    width: 440px;
+    height: 110px;
+}
+
+.fotoMia{
+    display: flex;
+    justify-content: center;
+}
+
+
+.mainSobreMi p{
+    width: 90%;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.texto1{
+    display: flex;
+    align-items: center;
+}
+
+
+/* fin media query main */
+
+/* inicio media query header */
+
+#logo{
+    height: 60%;
+    padding-top: 15px;
+}
+
+nav ul{
+    padding-top: 5px;
+}
+
+/* fin media query header */
+
+/* inicio media query footer */
+
+.foot .cajaIco{
+    display: grid;
+    flex-flow: wrap row;
+    justify-content: right;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 15px;
+    font-size: 14px;
+    
+}
+/* fin media query footer */
+}
+
+
+
+
+@media only screen and (max-width: 930px){
+
+
+/* inicio media query header */
+
+.headerOficial{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    
+}
+
+#logo{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+/* fin media query header */
+
+
+/* inicio query main */
+.mainSobreMi{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    
+}
+
+.cajaMain{
+    width: 100%;
+}
+
+
+
+.fotoMia{
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.cajaMain p{
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/* fin query main */
+
+/*inicio footer query  */
+
+
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+.foot .cajaDatos .cajaDatos1{
+    text-align: center;
+}
+
+.foot .cajaDatos .cajaDatos1 .nombre{
+    margin-right: 5px;
+}
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    padding-top: 5px;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
+/* fin query footer */
+
+
+}
+
+@media only screen and (max-width: 485px){
+
+/* inicio media query header */
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.headerOficial{
+    display: block;
+}
+
+nav{
+    display: none;
+}
+
+nav ul li a{
+    display: none;
+
+}
+
+header a{
+    display: none;
+    
+}
+
+.navbar{
+    display: flex;
+    
+}
+
+.navbar-toggler{
+    border: 0.4px solid white !important;
+    
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: "Montserrat', sans-serif";
+    text-shadow: 1px 2px 2px grey;
+    color: #fff !important;
+    font-size: 20px;
+}
+
+/* fin media query header */
+
+/* inicio media query main */
+
+.mainSobreMi{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+}
+
+.cajaMain img{
+    width: 100%;
+    padding: 10px;
+}
+
+.cajaMain p{
+    padding: 0px;
+    font-size: 15px;
+}
+
+/* fin media query main */
+
+/* incio media query footer */
+
+.foot .cajaDatos{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+
+.foot .cajaDatos .cajaDatos1 .datos{
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.foot .cajaDatos .cajaIco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foot .cajaDatos .cajaCopy{
+    padding-top: 10px;
+    font-size: 13px;
+}
+/* fin media query footer */
+}
+
+@media only screen and (max-width: 380px){
+
+
+
+.navbar{
+        display: flex;
+        
+    }
+
+.mainSobreMi{
+    height: auto;
+}
+
+.texto1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 0px 0px !important;
+}
+
+main div p{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.mainSobreMi .fotoMia{
+    padding: 10px;
+}
+
+.cajaMain .texto1{
+    border: solid white;
+}
+
+
+
+}
+
+@media only screen and (max-width: 321px){
+
+
+
+.mainSobreMi{
+    height: auto;
+    width: 100%;
+    
+}
+
+.texto1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px;
+}
+
+.nav-link{
+    font-size: 18px;
+}
+.fotoMia{
+    margin: 0px !important;
+    padding-top: 10px;
+}
+
+main div p{
+    margin: 0px 0px 0px 0px !important;
+    padding: 20px 0px 0px 0px !important;
+    width: 100%;
+    font-size: 0.90em !important;
+}
+
+
+
+}
+
+
+
+

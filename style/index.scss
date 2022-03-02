@@ -265,11 +265,6 @@ nav a:hover{
     letter-spacing: 5px;
 }
 
-
-
-
-
-
 @keyframes mainBlock {
 0% {
     width: 0%;
@@ -412,16 +407,10 @@ nav a:hover{
     transition: 2s;
 }
 
-
-
-
-
 /* -----inicio media query---------- */
 /* -----inicio media query---------- */
 
 @media only screen and (min-width: 1025px){
-
-
 
 header a img{
     width: 440px;
@@ -473,7 +462,7 @@ header nav{
 }
 
 ul li a:hover{
-    color: $color1;
+    color: $color2;
 }
 
 /* fin query nav */
@@ -486,10 +475,6 @@ ul li a:hover{
         
     .cajaDatos1{
         text-align: center;
-
-        .nombre{
-            margin-right: 5px;
-        }
 
         .datos{
             padding-top: 5px;
@@ -531,6 +516,10 @@ nav{
 
 .foot .cajaDatos .cajaDatos1{
     align-self: center;
+
+    .datos p{
+        margin: 0px;
+    }
 }
 
 }
@@ -538,6 +527,9 @@ nav{
 
 @media only screen and (max-width: 321px){
 
+#logo{
+    width: 100%;
+}
 .mainIndex{
     height: 650px;
 }

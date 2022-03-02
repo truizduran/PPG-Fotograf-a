@@ -623,7 +623,7 @@ nav a:hover {
     border: 1px solid #343a40;
   }
   ul li a:hover {
-    color: #131212;
+    color: #ffffff;
   }
   /* fin query nav */
   /* inicio query footer */
@@ -641,9 +641,6 @@ nav a:hover {
   }
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
-  }
-  .foot .cajaDatos .cajaDatos1 .nombre {
-    margin-right: 5px;
   }
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
@@ -693,9 +690,15 @@ nav a:hover {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .foot .cajaDatos .cajaDatos1 .datos p {
+    margin: 0px;
+  }
 }
 
 @media only screen and (max-width: 321px) {
+  #logo {
+    width: 100%;
+  }
   .mainIndex {
     height: 650px;
   }

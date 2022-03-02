@@ -12,12 +12,6 @@ header {
   background-color: #131212;
 }
 
-#logo {
-  width: 100%;
-  padding-top: 10px;
-  height: 105px;
-}
-
 header a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +27,12 @@ header a {
 
 header nav {
   width: 100%;
+}
+
+#logo {
+  width: 100%;
+  padding-top: 10px;
+  height: 105px;
 }
 
 nav ul {
@@ -55,13 +55,13 @@ nav ul li {
   margin-top: 10px;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none !important;
-  color: #fff;
+  color: #ffffff;
   font-size: 23px;
   text-transform: uppercase;
   font-family: "Montserrat', sans-serif";
-  text-shadow: 1px 2px 2px black;
+  text-shadow: 1px 2px 2px #131212;
 }
 
 nav a:hover {
@@ -109,6 +109,16 @@ nav a:hover {
   display: inline-block;
 }
 
+.foot .cajaDatos .cajaCopy {
+  text-align: center;
+  color: #ffffff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 17px;
+  margin-bottom: -15px;
+}
+
 .foot .cajaDatos .cajaDatos1 .datos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,22 +144,12 @@ nav a:hover {
 
 .cajaDatos .cajaDatos1 p a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   margin-right: 0px;
 }
 
-.foot .cajaDatos .cajaCopy {
-  text-align: center;
-  color: #fff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 17px;
-  margin-bottom: -15px;
-}
-
 .nombre {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* fin css footer */
@@ -246,7 +246,7 @@ nav a:hover {
 
 .container .box .title h1 {
   font-family: 'Poppins';
-  color: #fff;
+  color: #ffffff;
   font-size: 31px;
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
@@ -405,14 +405,14 @@ nav a:hover {
   0% {
     width: 0px;
     height: 0px;
-    background: #e9d856;
-    border: 0px solid #ddd;
+    background: #ffb510;
+    border: 0px solid #ffffff;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: #ffb510;
     opacity: 1;
     bottom: 45px;
   }
@@ -430,7 +430,7 @@ nav a:hover {
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: #ffb510;
     border: 0px solid #222;
     bottom: 13px;
   }
@@ -440,14 +440,14 @@ nav a:hover {
   0% {
     width: 0px;
     height: 0px;
-    background: #e9d856;
-    border: 0px solid #ddd;
+    background: #ffb510;
+    border: 0px solid #ffffff;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: #ffb510;
     opacity: 1;
     bottom: 45px;
   }
@@ -465,7 +465,7 @@ nav a:hover {
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: #ffb510;
     border: 0px solid #222;
     bottom: 13px;
   }
@@ -605,7 +605,7 @@ nav a:hover {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  nav ul {
+  header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,14 +623,14 @@ nav a:hover {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
-  nav ul li a {
+  header nav ul li a {
     background-color: rgba(12, 12, 12, 0.7);
-    color: white;
-    text-shadow: 0px 0px 0px white;
+    color: #ffffff;
+    text-shadow: 0px 0px 0px #ffffff;
     border: 1px solid #343a40;
   }
   ul li a:hover {
-    color: #0000;
+    color: #131212;
   }
   /* fin query nav */
   /* inicio query footer */

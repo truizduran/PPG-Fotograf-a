@@ -2,7 +2,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* inicio css header nav */
@@ -17,9 +18,16 @@
 }
 
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav {
@@ -27,9 +35,16 @@ header nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav ul li {
@@ -64,17 +79,29 @@ nav a:hover {
   background-image: url(../media/img/IMG_5740.JPG);
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .formularioContacto {
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 13px;
   padding: 0px 15px 0px 15px;
@@ -94,8 +121,10 @@ label,
 }
 
 .puntos {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
   width: 43%;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -103,27 +132,40 @@ label,
 }
 
 .mot {
-  justify-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .radio {
-  justify-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .radio1,
 .consulta {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
 .msj {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .botEnviar {
   margin-top: 15px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .punto2 {
@@ -142,8 +184,10 @@ label,
   width: 95%;
   max-width: 100%;
   margin: auto;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 5px 10px;
 }
@@ -154,16 +198,32 @@ label,
 }
 
 .foot .cajaDatos .cajaDatos1 .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: -16px;
 }
 
 .foot .cajaIco {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
@@ -177,6 +237,8 @@ label,
   text-align: center;
   padding: 5px 0px;
   color: #fff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
   font-size: 17px;
   margin-bottom: -15px;
@@ -194,147 +256,156 @@ label,
   .headerOficial {
     height: 170px;
   }
-
   header a img {
     width: 440px;
     height: 110px;
   }
-
   #logo {
     height: 60%;
     padding-top: 15px;
   }
-
   nav ul {
     padding-top: 5px;
   }
-
   /* fin media query header */
   .punto2 {
     display: none;
   }
-
   /* inicio media query footer */
   .foot .cajaIco {
+    display: -ms-grid;
     display: grid;
-    flex-flow: wrap row;
-    justify-content: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 15px;
     font-size: 14px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 930px) {
   .mainFormulario {
     height: auto;
   }
-
   /* inicio media query header */
   .headerOficial {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     height: auto;
   }
-
   #logo {
     width: 100%;
     padding-top: 15px;
     padding-right: 30px;
   }
-
   nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 20px;
   }
-
   /* fin media query header */
   .formularioContacto {
     height: auto;
     margin-top: 100px;
   }
-
   .puntos2 {
     display: none;
   }
-
   /*inicio footer query  */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .nombre {
     margin-right: 5px;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 15px;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   .foot .cajaDatos .cajaDatos1 a {
     margin: 0px !important;
   }
-
   /* fin query footer */
 }
+
 @media only screen and (max-width: 485px) {
   /* inicio media query header */
   .headerOficial {
     display: block;
   }
-
   nav {
     display: none;
   }
-
   #logo {
     width: 50%;
     height: 60%;
     padding-top: 10px;
   }
-
   header a {
     display: none;
   }
-
   nav ul li a {
     display: none;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .navbar-toggler {
     border: 0.4px solid white !important;
   }
-
   .nav-link {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
@@ -342,139 +413,158 @@ label,
     color: #fff !important;
     font-size: 20px;
   }
-
   /* fin media query header */
   /* inicio media query formulario */
   .mainFormulario {
     height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0px 15px 0px 15px;
   }
-
   .formularioContacto {
     height: auto;
     background: none;
     padding: 0px !important;
     margin: 0px !important;
   }
-
   .usted {
     width: 50px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-
   input {
     width: 200px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-top: 5px;
   }
-
   label {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-
   .formularioContacto p {
     text-align: center;
   }
-
   .puntos {
     display: none;
   }
-
   .motMsj {
     height: 25px;
   }
-
   textarea {
     width: 400px;
   }
-
   .punto2 {
     width: 100px;
     display: list-item;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-bottom: 30px;
   }
-
   /* fin media query formulario */
   /* incio media query footer */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .nombre {
     margin-right: 5px;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 15px;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 394px) {
   .mainFormulario {
     height: 110vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0px 15px 0px 15px;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .formularioContacto {
     height: auto;
     padding-bottom: 150px;
   }
-
   textarea {
     width: 330px;
     height: 150px;
   }
 }
+
 @media only screen and (max-width: 345px) {
   .nav-link {
     font-size: 18px;
   }
-
   .mainFormulario {
     height: auto;
   }
-
   .formularioContacto {
     height: auto;
     padding-bottom: 150px;
   }
-
   textarea {
     width: 290px !important;
     margin: 0px;
   }
 }
-
 /*# sourceMappingURL=contacto.css.map */

@@ -1,19 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
 
+
+$color1:#131212;
+$color2:#ffffff;
+$color3:#808080;
+$color4:#232323;
+$color5:#ffb510;
+$color6:#e91e63;
+
+
+
+
 *{
     padding: 0px;
     margin: 0px;
 }
-        
-
 
 
 /* inicio css header nav */
 header{
     height: 0px;
     width: 100%;
-    background-color: #131212;
+    background-color: $color1;
+
+    a{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center; 
+    }
+
+    nav{
+        width: 100%;
+    }
 }
 
 #logo{
@@ -23,40 +42,31 @@ header{
     
 }
 
-header a{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center; 
-}
+nav{ 
+    ul{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content:space-evenly;
+            li{
+                list-style: none;
+                margin-left: 30px;
+                display: inline-block;
+                margin-top: 10px;
+                    a {
+                        text-decoration: none !important;
+                        color: $color2;
+                        font-size: 23px;
+                        text-transform: uppercase;
+                        font-family: "Montserrat', sans-serif";
+                        text-shadow: 1px 2px 2px $color1;
+            }
+        }
+    }
 
-header nav{
-    width: 100%; 
-}
-
-nav ul{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content:space-evenly;
-}
-
-nav ul li{
-    list-style: none;
-    margin-left: 30px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-nav a {
-    text-decoration: none !important;
-    color: #fff;
-    font-size: 23px;
-    text-transform: uppercase;
-    font-family: "Montserrat', sans-serif";
-    text-shadow: 1px 2px 2px black;
 }
 
 nav a:hover{
-    color: #808080;
+    color: $color3;
 }
 
 /* fin css header nav */
@@ -72,7 +82,6 @@ nav a:hover{
     /* backface-visibility: hidden; */
     animation: mainIndex 30s linear infinite 4s;
     animation-timing-function: ease-in-out;
-    
 }
 
 
@@ -82,67 +91,49 @@ nav a:hover{
 
 .foot{
     width: 100%;
-    background-color: #131212;
+    background-color: $color1;
     overflow: hidden;
     font-family: "Montserrat', sans-serif";
-    
-}
-
-.foot .cajaDatos{
-    width: 95%;
-    margin: auto; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 5px 10px;
-    
-}
-
-.foot .cajaDatos .cajaIco ul li{
-    list-style: none;
-    display: inline-block;
-    
-}
-
-.foot .cajaDatos .cajaDatos1 .datos{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    width: 70%;
-    margin-top: -16px;
-    
-}
-
-
-.foot .cajaDatos .cajaIco{
-    grid-column: 3/4;
-    justify-self: end;
+        .cajaDatos{
+            width: 95%;
+            margin: auto; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 5px 10px;
+                .cajaIco ul li{
+                    list-style: none;
+                    display: inline-block;
+                }
+                .cajaCopy{
+                    text-align: center;
+                    color: $color2;
+                    grid-column: 2/3;
+                    font-size: 17px;
+                    margin-bottom: -15px;
+                }
+                .cajaDatos1 .datos{
+                    display: flex;
+                    flex-flow: wrap row;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin-top: -16px;
+                }
+                .cajaIco{
+                    grid-column: 3/4;
+                    justify-self: end;
+                }
+        }
 }
 
 .cajaDatos .cajaDatos1 p a{
     text-decoration: none;
-    color: #fff;
+    color: $color2;
     margin-right: 0px;
-    
-
-    
 }
-
-.foot .cajaDatos .cajaCopy{
-    text-align: center;
-    color: #fff;
-    grid-column: 2/3;
-    font-size: 17px;
-    margin-bottom: -15px;
-    
-    
-}
-
 
 .nombre{
-    color: #fff;
-    
-    
+    color: $color2;
 }
 
 
@@ -181,7 +172,7 @@ nav a:hover{
 .container {
     width: 100%;
     height: 100vh;
-    background: #232323;
+    background: $color4;
     
     display: flex;
     justify-content: center;
@@ -205,7 +196,7 @@ nav a:hover{
 .container .box .title .block {
     width: 0%;
     height: inherit;
-    background: #ffb510;
+    background: $color5;
     position: absolute;
     animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
     display: flex;
@@ -213,7 +204,7 @@ nav a:hover{
 
 .container .box .title h1 {
     font-family: 'Poppins';
-    color: #fff;
+    color: $color2;
     font-size: 31px;
     -webkit-animation: mainFadeIn 2s forwards;
     -o-animation: mainFadeIn 2s forwards;
@@ -231,7 +222,7 @@ nav a:hover{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background: #ffb510;
+    background: $color5;
     -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
     animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
     animation-delay: 2s;
@@ -254,7 +245,7 @@ nav a:hover{
 .role .block {
     width: 0%;
     height: inherit;
-    background: #e91e63;
+    background: $color6;
     position: absolute;
     animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
     animation-delay: 2s;
@@ -267,7 +258,7 @@ nav a:hover{
     opacity: 0;
     font-weight: 400;
     font-family: 'Lato';
-    color: #ffffff;
+    color: $color2;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -321,14 +312,14 @@ nav a:hover{
 0% {
     width: 0px;
     height: 0px;
-    background: #e9d856;
-    border: 0px solid #ddd;
+    background: $color5;
+    border: 0px solid $color2;
     opacity: 0;
     }
 50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: $color5;
     opacity: 1;
         bottom: 45px;
 }
@@ -346,7 +337,7 @@ nav a:hover{
 100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: $color5;
     border: 0px solid #222;
     bottom: 13px;
 
@@ -402,7 +393,7 @@ nav a:hover{
     height:100% ;
     width:100%; 
     z-index: 10000;
-    background: #232323;
+    background: $color4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,7 +430,6 @@ header a img{
 .foot .cajaDatos .cajaCopy{
     padding-top: 0px;
     font-size: 14px;
-    
 }
 
 }
@@ -451,7 +441,7 @@ header a img{
 .mainIndex{
     background-size: cover;
     background-position: center
-    }
+}
 
 #logo{
     padding-top: 25px;
@@ -462,69 +452,57 @@ header a img{
 header nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-nav ul{
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    height: 250px;
-    margin-right: 42px;
-    margin-top: 100px;
-    grid-column: 2/3;
-    
-}
-
-nav ul li a{
-    background-color: rgba(12, 12, 12, 0.7);
-    color: white;
-    text-shadow: 0px 0px 0px white;
-    border: 1px solid #343a40;
-    
+        ul{
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-between;
+            height: 250px;
+            margin-right: 42px;
+            margin-top: 100px;
+            grid-column: 2/3;
+                li a{
+                    background-color: rgba(12, 12, 12, 0.7);
+                    color: $color2;
+                    text-shadow: 0px 0px 0px $color2;
+                    border: 1px solid #343a40;
+                }
+        }
 }
 
 ul li a:hover{
-    color: #0000;
+    color: $color1;
 }
 
 /* fin query nav */
-
 
 /* inicio query footer */
 .foot .cajaDatos{
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-
-
-}
-
-.foot .cajaDatos .cajaDatos1{
-    text-align: center;
-
-}
-
-.foot .cajaDatos .cajaDatos1 .nombre{
-    margin-right: 5px;
-}
-
-.foot .cajaDatos .cajaDatos1 .datos{
-    padding-top: 5px;
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
-    width: 100%;
-}
-
-.foot .cajaDatos .cajaIco{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.foot .cajaDatos .cajaCopy{
-    padding-top: 10px;
-    font-size: 13px;
+        .cajaDatos1{
+            text-align: center;
+                .nombre{
+                    margin-right: 5px;
+                }
+                .datos{
+                    padding-top: 5px;
+                    display: flex;
+                    flex-flow: wrap column;
+                    align-items: center;
+                    width: 100%;
+                }
+        }
+        .cajaIco{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 15px;
+        }
+        .cajaCopy{
+            padding-top: 10px;
+            font-size: 13px;
+        }
 }
 /* fin query footer */
 
@@ -540,11 +518,9 @@ ul li a:hover{
 
 nav{
     margin-top: 50px;
-    
-}
-
-nav ul li a{
-    font-size: 20px;
+        ul li a{
+            font-size: 20px;
+        }
 }
 
 .foot .cajaDatos .cajaDatos1{

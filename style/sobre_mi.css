@@ -16,9 +16,16 @@
 }
 
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav {
@@ -26,9 +33,16 @@ header nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .navbar {
@@ -61,9 +75,14 @@ nav a:hover {
   background-color: #262525;
   height: 110vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cajaMain {
@@ -72,16 +91,23 @@ nav a:hover {
 }
 
 .fotoMia {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .texto1 {
   color: white;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cajaMain p {
@@ -101,8 +127,10 @@ nav a:hover {
   width: 95%;
   max-width: 100%;
   margin: auto;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 5px 10px;
 }
@@ -113,16 +141,32 @@ nav a:hover {
 }
 
 .foot .cajaDatos .cajaDatos1 .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: -16px;
 }
 
 .foot .cajaIco {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
@@ -136,6 +180,8 @@ nav a:hover {
   text-align: center;
   padding: 5px 0px;
   color: #fff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
   font-size: 17px;
   margin-bottom: -15px;
@@ -154,166 +200,191 @@ nav a:hover {
     width: 440px;
     height: 110px;
   }
-
   .fotoMia {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .mainSobreMi p {
     width: 90%;
     padding: 0px 0px 0px 0px !important;
     margin: 0px 0px 0px 0px !important;
     font-size: 25px;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .texto1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* fin media query main */
   /* inicio media query header */
   #logo {
     height: 60%;
     padding-top: 15px;
   }
-
   nav ul {
     padding-top: 5px;
   }
-
   /* fin media query header */
   /* inicio media query footer */
   .foot .cajaIco {
+    display: -ms-grid;
     display: grid;
-    flex-flow: wrap row;
-    justify-content: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 15px;
     font-size: 14px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 930px) {
   /* inicio media query header */
   .headerOficial {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     height: auto;
   }
-
   #logo {
     width: 100%;
     padding-top: 15px;
     padding-right: 30px;
   }
-
   nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 20px;
   }
-
   /* fin media query header */
   /* inicio query main */
   .mainSobreMi {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     height: auto;
   }
-
   .cajaMain {
     width: 100%;
   }
-
   .fotoMia {
     width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 13px;
   }
-
   .cajaMain p {
     margin: 20px;
     padding: 20px;
     font-size: 18px;
   }
-
   /* fin query main */
   /*inicio footer query  */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .nombre {
     margin-right: 5px;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   /* fin query footer */
 }
+
 @media only screen and (max-width: 485px) {
   /* inicio media query header */
   html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
-
   .headerOficial {
     display: block;
   }
-
   nav {
     display: none;
   }
-
   nav ul li a {
     display: none;
   }
-
   header a {
     display: none;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .navbar-toggler {
     border: 0.4px solid white !important;
   }
-
   .nav-link {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
@@ -321,107 +392,118 @@ nav a:hover {
     color: #fff !important;
     font-size: 20px;
   }
-
   /* fin media query header */
   /* inicio media query main */
   .mainSobreMi {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     height: auto;
   }
-
   .cajaMain img {
     width: 100%;
     padding: 10px;
   }
-
   .cajaMain p {
     padding: 0px;
     font-size: 15px;
   }
-
   /* fin media query main */
   /* incio media query footer */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 380px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .mainSobreMi {
     height: auto;
   }
-
   .texto1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
     padding: 20px 0px 0px !important;
   }
-
   main div p {
     margin: 0px !important;
     padding: 0px !important;
   }
-
   .mainSobreMi .fotoMia {
     padding: 10px;
   }
-
   .cajaMain .texto1 {
     border: solid white;
   }
 }
+
 @media only screen and (max-width: 321px) {
   .mainSobreMi {
     height: auto;
     width: 100%;
   }
-
   .texto1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 10px 0px 0px;
   }
-
   .nav-link {
     font-size: 18px;
   }
-
   .fotoMia {
     margin: 0px !important;
     padding-top: 10px;
   }
-
   main div p {
     margin: 0px 0px 0px 0px !important;
     padding: 20px 0px 0px 0px !important;
     width: 100%;
-    font-size: 0.9em !important;
+    font-size: 0.90em !important;
   }
 }
-
 /*# sourceMappingURL=sobre_mi.css.map */

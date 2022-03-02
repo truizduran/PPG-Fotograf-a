@@ -16,9 +16,16 @@
 }
 
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav {
@@ -26,9 +33,16 @@ header nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .navbar {
@@ -61,65 +75,90 @@ nav a:hover {
   height: 200vh;
   width: 100%;
   background-color: #262525;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "foto7 textoFilo" "textoPro foto8" "foto9 textoMi";
+      grid-template-areas: "foto7 textoFilo" "textoPro foto8" "foto9 textoMi";
 }
 
 .foto7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: foto7;
   background-image: url(../media/img/IMG_3568.JPG);
   background-size: cover;
 }
 
 .textoFilo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: textoFilo;
 }
 
 .textoPro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: textoPro;
 }
 
 .foto8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: foto8;
   background-image: url(../media/img/IMG_72158.JPG);
   background-size: cover;
 }
 
 .foto9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: foto9;
   background-image: url(../media/img/IMG_4197.JPG);
   background-size: cover;
 }
 
 .textoMi {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: textoMi;
 }
 
 h2 {
   color: #fff;
   font-size: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .mainExperiencia p {
   color: #fff;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .mainExperiencia h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
 }
 
 .mainExperiencia p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   text-align: center;
   margin-top: 20px;
   padding: 20px;
@@ -138,8 +177,10 @@ h2 {
   width: 95%;
   max-width: 100%;
   margin: auto;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 5px 10px;
 }
@@ -150,16 +191,32 @@ h2 {
 }
 
 .foot .cajaDatos .cajaDatos1 .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: -16px;
 }
 
 .foot .cajaIco {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
@@ -173,6 +230,8 @@ h2 {
   text-align: center;
   padding: 5px 0px;
   color: #fff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
   font-size: 17px;
   margin-bottom: -15px;
@@ -189,174 +248,178 @@ h2 {
   .headerOficial {
     height: 170px;
   }
-
   header a img {
     width: 440px;
     height: 110px;
   }
-
   /* inicio media query header */
   .mainExperiencia {
     height: auto;
   }
-
   #logo {
     height: 60%;
     padding-top: 15px;
   }
-
   nav ul {
     padding-top: 5px;
   }
-
   /* fin media query header */
   /* inicio media query main experiencia */
   .foto7,
-.foto8,
-.foto9 {
+  .foto8,
+  .foto9 {
     background-position: center;
     background-size: cover;
   }
-
   .mainExperiencia h2 {
     padding-top: 40px;
   }
-
   /* inicio media query footer */
   .foot .cajaIco {
+    display: -ms-grid;
     display: grid;
-    flex-flow: wrap row;
-    justify-content: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 15px;
     font-size: 14px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 930px) {
   /* inicio media query header */
   .headerOficial {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     height: auto;
   }
-
   #logo {
     width: 100%;
     padding-top: 15px;
     padding-right: 30px;
   }
-
   nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 20px;
   }
-
   /* fin media query header */
   /* inicio query main experiencia */
   .mainExperiencia {
     height: auto;
   }
-
   .foto7 {
     background-position: center;
     height: 100%;
   }
-
   .foto8 {
     height: 100%;
     background-position: center;
   }
-
   .foto9 {
     height: 100%;
     background-position: center;
   }
-
   .mainExperiencia p {
     font-size: 15px;
   }
-
   .mainExperiencia h2 {
     font-size: 30px;
   }
-
   .textoMi h2 {
     text-align: center;
   }
-
   /*inicio footer query  */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .nombre {
     margin-right: 5px;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 15px;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   /* fin query footer */
 }
+
 @media only screen and (max-width: 485px) {
   /* inicio media query header */
   html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
-
   .headerOficial {
     display: block;
   }
-
   nav {
     display: none;
   }
-
   nav ul li a {
     display: none;
   }
-
   header a {
     display: none;
   }
-
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .navbar-toggler {
     border: 0.4px solid white !important;
   }
-
   .nav-link {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
@@ -364,20 +427,20 @@ h2 {
     color: #fff !important;
     font-size: 20px;
   }
-
   /* fin media query header */
   /* inicio query main */
   .mainExperiencia {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .foto8,
-.foto7 {
+  .foto7 {
     display: none;
   }
-
   .foto9 {
     width: 100%;
     height: 500px;
@@ -385,60 +448,69 @@ h2 {
     background-size: 350px 400px;
     background-repeat: no-repeat;
   }
-
   .mainExperiencia p {
     font-size: 15px;
   }
-
   .mainExperiencia h2 {
     font-size: 26px;
     padding-top: 20px;
   }
-
   /* fin query main experiencia */
   /* incio media query footer */
   .foot .cajaDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-
   .foot .cajaDatos .cajaDatos1 .nombre {
     margin-right: 5px;
   }
-
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
   }
-
   .foot .cajaDatos .cajaIco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 15px;
   }
-
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-
   /* fin media query footer */
 }
+
 @media only screen and (max-width: 380px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .mainExperiencia {
     height: auto;
   }
 }
-
 /*# sourceMappingURL=experiencia.css.map */

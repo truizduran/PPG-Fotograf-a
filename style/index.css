@@ -77,7 +77,6 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* backface-visibility: hidden; */
   -webkit-animation: mainIndex 30s linear infinite 4s;
           animation: mainIndex 30s linear infinite 4s;
   -webkit-animation-timing-function: ease-in-out;
@@ -166,9 +165,6 @@ nav a:hover {
   75% {
     background-image: url(../media/img/IMG_9234.JPG);
   }
-  /* 100%{
-            background-image: url(../media/img/IMG_4578.JPG);
-        } */
 }
 @keyframes mainIndex {
   0%, 100% {
@@ -183,9 +179,6 @@ nav a:hover {
   75% {
     background-image: url(../media/img/IMG_9234.JPG);
   }
-  /* 100%{
-            background-image: url(../media/img/IMG_4578.JPG);
-        } */
 }
 
 /* inicio presentacion */

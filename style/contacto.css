@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100;1,300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -59,8 +60,8 @@ nav a {
   color: #fff;
   font-size: 23px;
   text-transform: uppercase;
-  font-family: "Montserrat', sans-serif";
-  text-shadow: 1px 2px 2px grey;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 2px 2px #131212;
 }
 
 nav a:hover {
@@ -115,7 +116,7 @@ input {
 
 label,
 .motMsj {
-  color: #fff;
+  color: #ffffff;
   margin: 2px;
 }
 
@@ -178,12 +179,11 @@ label,
   width: 100%;
   background-color: #131212;
   overflow: hidden;
-  font-family: "Montserrat', sans-serif";
+  font-family: "Montserrat", sans-serif;
 }
 
 .foot .cajaDatos {
   width: 95%;
-  max-width: 100%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -198,6 +198,16 @@ label,
   display: inline-block;
 }
 
+.foot .cajaDatos .cajaCopy {
+  text-align: center;
+  color: #ffffff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 13px;
+  margin-bottom: -15px;
+}
+
 .foot .cajaDatos .cajaDatos1 .datos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,47 +216,31 @@ label,
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap row;
           flex-flow: wrap row;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
   margin-top: -16px;
+  font-size: 13px;
 }
 
-.foot .cajaIco {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap row;
-          flex-flow: wrap row;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+.foot .cajaDatos .cajaIco {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .cajaDatos .cajaDatos1 p a {
   text-decoration: none;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.foot .cajaDatos .cajaCopy {
-  text-align: center;
-  padding: 5px 0px;
-  color: #fff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 17px;
-  margin-bottom: -15px;
+  color: #ffffff;
+  margin-right: 0px;
 }
 
 .nombre {
-  color: #fff;
+  color: #ffffff;
+  font-size: 13px;
 }
 
 /* fin css footer */
@@ -346,9 +340,6 @@ label,
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-  .foot .cajaDatos .cajaDatos1 .nombre {
-    margin-right: 5px;
-  }
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
     display: -webkit-box;
@@ -358,6 +349,7 @@ label,
     -webkit-box-direction: normal;
         -ms-flex-flow: wrap column;
             flex-flow: wrap column;
+    width: 100%;
   }
   .foot .cajaDatos .cajaIco {
     display: -webkit-box;
@@ -368,14 +360,10 @@ label,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 15px;
   }
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
-  }
-  .foot .cajaDatos .cajaDatos1 a {
-    margin: 0px !important;
   }
   /* fin query footer */
 }
@@ -405,13 +393,13 @@ label,
     display: flex;
   }
   .navbar-toggler {
-    border: 0.4px solid white !important;
+    border: 0.4px solid #ffffff !important;
   }
   .nav-link {
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
     text-shadow: 1px 2px 2px grey;
-    color: #fff !important;
+    color: #ffffff !important;
     font-size: 20px;
   }
   /* fin media query header */
@@ -464,7 +452,7 @@ label,
     height: 25px;
   }
   textarea {
-    width: 400px;
+    width: 387px;
   }
   .punto2 {
     width: 100px;
@@ -488,14 +476,7 @@ label,
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .foot .cajaDatos .cajaDatos1 {
-    text-align: center;
-  }
-  .foot .cajaDatos .cajaDatos1 .nombre {
-    margin-right: 5px;
-  }
   .foot .cajaDatos .cajaDatos1 .datos {
-    padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -513,15 +494,14 @@ label,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 15px;
   }
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
     font-size: 13px;
   }
-  /* fin media query footer */
 }
 
+/* fin media query footer */
 @media only screen and (max-width: 394px) {
   .mainFormulario {
     height: 110vh;

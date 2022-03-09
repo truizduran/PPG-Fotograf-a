@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100;1,300&display=swap');
 
 $color1:#131212;
 $color2:#ffffff;
@@ -9,9 +9,9 @@ $color4:#232323;
 $color5:#ffb510;
 $color6:#e91e63;
 
-$font1: "Montserrat', sans-serif";
+$font1: 'Montserrat', sans-serif;
 $font2: uppercase;
-
+$font3: 'Times New Roman', Times, serif;
 
 *{
     padding: 0px;
@@ -60,7 +60,7 @@ nav{
                 color: $color2;
                 font-size: 23px;
                 text-transform: $font2;
-                font-family: $font1;
+                font-family: $font3;
                 text-shadow: 1px 2px 2px $color1;
             }
         }
@@ -111,7 +111,7 @@ nav a:hover{
                 text-align: center;
                 color: $color2;
                 grid-column: 2/3;
-                font-size: 17px;
+                font-size: 13px;
                 margin-bottom: -15px;
             }
             .cajaDatos1 .datos{
@@ -120,6 +120,7 @@ nav a:hover{
                 justify-content: space-between;
                 width: 70%;
                 margin-top: -16px;
+                font-size: 13px;
             }
             .cajaIco{
                 grid-column: 3/4;

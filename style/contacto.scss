@@ -1,9 +1,15 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100;1,300&display=swap');
 
+$color1:#131212;
+$color2:#ffffff;
+$color3:#808080;
+$color4:#232323;
+$color5:#262525;
 
-
+$font1: 'Montserrat', sans-serif;
+$font2: uppercase;
+$font3: 'Times New Roman', Times, serif;
 
 *{
     padding: 0px;
@@ -15,7 +21,7 @@
 .headerOficial{
     height: 170px;
     width: 100%;
-    background-color: #131212;
+    background-color: $color1;
 }
 
 #logo{
@@ -49,13 +55,13 @@ nav a {
     text-decoration: none !important;
     color: #fff;
     font-size: 23px;
-    text-transform: uppercase;
-    font-family: "Montserrat', sans-serif";
-    text-shadow: 1px 2px 2px grey;
+    text-transform: $font2;
+    font-family: $font3;
+    text-shadow: 1px 2px 2px $color1;
 }
 
 nav a:hover{
-    color: #808080;
+    color: $color3;
 }
 
 .navbar{
@@ -99,7 +105,7 @@ input{
 
 label,
 .motMsj{
-    color: #fff;
+    color: $color2;
     margin: 2px;
 }
 
@@ -149,61 +155,52 @@ label,
 
 .foot{
     width: 100%;
-    background-color: #131212;
+    background-color: $color1;
     overflow: hidden;
-    font-family: "Montserrat', sans-serif";
-}
-
-.foot .cajaDatos{
-    width: 95%;
-    max-width: 100%; 
-    margin: auto; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 5px 10px;
-}
-
-.foot .cajaDatos .cajaIco ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.foot .cajaDatos .cajaDatos1 .datos{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: left;
-    margin-top: -16px;
-}
-
-
-.foot .cajaIco{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: right;
-    grid-column: 3/4;
+    font-family: $font1;
+    .cajaDatos{
+            width: 95%;
+            margin: auto; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 5px 10px;
+            .cajaIco ul li{
+                list-style: none;
+                display: inline-block;
+            }
+            .cajaCopy{
+                text-align: center;
+                color: $color2;
+                grid-column: 2/3;
+                font-size: 13px;
+                margin-bottom: -15px;
+            }
+            .cajaDatos1 .datos{
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: space-between;
+                width: 70%;
+                margin-top: -16px;
+                font-size: 13px;
+            }
+            .cajaIco{
+                grid-column: 3/4;
+                justify-self: end;
+            }
+        }
 }
 
 .cajaDatos .cajaDatos1 p a{
     text-decoration: none;
-    color: #fff;
-    margin-right: 15px;
+    color: $color2;
+    margin-right: 0px;
 }
-
-.foot .cajaDatos .cajaCopy{
-    text-align: center;
-    padding: 5px 0px;
-    color: #fff;
-    grid-column: 2/3;
-    font-size: 17px;
-    margin-bottom: -15px;
-}
-
 
 .nombre{
-    color: #fff;
+    color: $color2;
+    font-size: 13px;
 }
-
 /* fin css footer */
 
 /* -----inicio media query---------- */
@@ -242,15 +239,16 @@ nav ul{
 
 /* inicio media query footer */
 
-.foot .cajaIco{
-    display: grid;
-    flex-flow: wrap row;
-    justify-content: right;
-}
-
-.foot .cajaDatos .cajaCopy{
-    padding-top: 15px;
-    font-size: 14px;
+.foot {
+    .cajaIco{
+        display: grid;
+        flex-flow: wrap row;
+        justify-content: right;
+    }
+    .cajaDatos .cajaCopy{
+        padding-top: 15px;
+        font-size: 14px;
+    }
 }
 /* fin media query footer */
 }
@@ -300,47 +298,34 @@ nav ul{
 
 
 /*inicio footer query  */
-
-
-.foot .cajaDatos{
+.foot{ 
+    .cajaDatos{
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-}
-
-.foot .cajaDatos .cajaDatos1{
-    text-align: center;
-}
-
-.foot .cajaDatos .cajaDatos1 .nombre{
-    margin-right: 5px;
-}
-
-.foot .cajaDatos .cajaDatos1 .datos{
-    padding-top: 5px;
-    display: flex;
-    flex-flow: wrap column;
-}
-
-.foot .cajaDatos .cajaIco{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.foot .cajaDatos .cajaCopy{
-    padding-top: 10px;
-    font-size: 13px;
-}
-
-.foot .cajaDatos .cajaDatos1 a{
-    margin: 0px !important;
+        .cajaDatos1{
+            text-align: center;
+            .datos{
+                padding-top: 5px;
+                display: flex;
+                flex-flow: wrap column;
+                width: 100%;
+            }
+        }
+        .cajaIco{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cajaCopy{
+            padding-top: 10px;
+            font-size: 13px;
+        }
+    }
 }
 /* fin query footer */
-
-
 }
+
 
 @media only screen and (max-width: 500px){
 
@@ -372,14 +357,14 @@ nav ul li a{
 }
 
 .navbar-toggler{
-    border: 0.4px solid white !important;
+    border: 0.4px solid $color2 !important;
 }
 
 .nav-link{
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
     text-shadow: 1px 2px 2px grey;
-    color: #fff !important;
+    color: $color2 !important;
     font-size: 20px;
 }
 
@@ -429,7 +414,7 @@ label{
 }
 
 textarea{
-    width:400px;
+    width:387px;
 }
 
 .punto2{
@@ -443,39 +428,29 @@ textarea{
 
 /* incio media query footer */
 
-.foot .cajaDatos{
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-}
-
-.foot .cajaDatos .cajaDatos1{
-    text-align: center;
-}
-
-.foot .cajaDatos .cajaDatos1 .nombre{
-    margin-right: 5px;
-}
-
-.foot .cajaDatos .cajaDatos1 .datos{
-    padding-top: 5px;
-    display: flex;
-    flex-flow: wrap column;
-}
-
-.foot .cajaDatos .cajaIco{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.foot .cajaDatos .cajaCopy{
-    padding-top: 10px;
-    font-size: 13px;
+.foot{ 
+    .cajaDatos{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        .cajaDatos1 .datos{
+            display: flex;
+            flex-flow: wrap column;
+        }
+        .cajaIco{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cajaCopy{
+            padding-top: 10px;
+            font-size: 13px;
+        }
+    }
+} 
 }
 /* fin media query footer */
-}
+
 
 @media only screen and (max-width: 394px){
 

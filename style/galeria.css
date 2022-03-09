@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100;1,300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -63,8 +64,8 @@ nav a {
   color: #fff;
   font-size: 23px;
   text-transform: uppercase;
-  font-family: "Montserrat', sans-serif";
-  text-shadow: 1px 2px 2px grey;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 2px 2px #131212;
 }
 
 nav a:hover {
@@ -161,12 +162,11 @@ nav a:hover {
   width: 100%;
   background-color: #131212;
   overflow: hidden;
-  font-family: "Montserrat', sans-serif";
+  font-family: "Montserrat", sans-serif;
 }
 
 .foot .cajaDatos {
   width: 95%;
-  max-width: 100%;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -181,6 +181,16 @@ nav a:hover {
   display: inline-block;
 }
 
+.foot .cajaDatos .cajaCopy {
+  text-align: center;
+  color: #ffffff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 13px;
+  margin-bottom: -15px;
+}
+
 .foot .cajaDatos .cajaDatos1 .datos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,51 +199,35 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap row;
           flex-flow: wrap row;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
   margin-top: -16px;
+  font-size: 13px;
 }
 
-.foot .cajaIco {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap row;
-          flex-flow: wrap row;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+.foot .cajaDatos .cajaIco {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .cajaDatos .cajaDatos1 p a {
   text-decoration: none;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.foot .cajaDatos .cajaCopy {
-  text-align: center;
-  padding: 5px 0px;
-  color: #fff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 17px;
-  margin-bottom: -15px;
+  color: #ffffff;
+  margin-right: 0px;
 }
 
 .nombre {
-  color: #fff;
+  color: #ffffff;
+  font-size: 13px;
 }
 
 /* fin css footer */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .headerOficial {
     height: 170px;
   }
@@ -259,7 +253,7 @@ nav a:hover {
         grid-template-rows: repeat(4, 1fr);
   }
   .foto1 {
-    background-position-x: 500px;
+    background-position-x: 0px;
   }
   .foto3 {
     background-position: initial;
@@ -428,9 +422,6 @@ nav a:hover {
   .foot .cajaDatos .cajaDatos1 {
     text-align: center;
   }
-  .foot .cajaDatos .cajaDatos1 .nombre {
-    margin-right: 5px;
-  }
   .foot .cajaDatos .cajaDatos1 .datos {
     padding-top: 5px;
     display: -webkit-box;
@@ -440,9 +431,7 @@ nav a:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: wrap column;
             flex-flow: wrap column;
-  }
-  .cajaDatos .cajaDatos1 p a {
-    margin-right: 0px !important;
+    width: 100%;
   }
   .foot .cajaDatos .cajaIco {
     display: -webkit-box;
@@ -453,7 +442,6 @@ nav a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 15px;
   }
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;
@@ -601,14 +589,7 @@ nav a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .foot .cajaDatos .cajaDatos1 {
-    text-align: center;
-  }
-  .foot .cajaDatos .cajaDatos1 .nombre {
-    margin-right: 5px;
-  }
   .foot .cajaDatos .cajaDatos1 .datos {
-    padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -626,7 +607,6 @@ nav a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 15px;
   }
   .foot .cajaDatos .cajaCopy {
     padding-top: 10px;

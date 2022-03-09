@@ -82,7 +82,7 @@ nav a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: mainIndex 30s linear infinite 4s;
+    animation: mainIndex 20s linear infinite 8s;
     animation-timing-function: ease-in-out;
 }
 
@@ -96,7 +96,6 @@ nav a:hover{
     background-color: $color1;
     overflow: hidden;
     font-family: $font1;
-        
     .cajaDatos{
             width: 95%;
             margin: auto; 
@@ -104,12 +103,10 @@ nav a:hover{
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
             padding: 5px 10px;
-                
             .cajaIco ul li{
-                    list-style: none;
-                    display: inline-block;
+                list-style: none;
+                display: inline-block;
             }
-                
             .cajaCopy{
                 text-align: center;
                 color: $color2;
@@ -117,7 +114,6 @@ nav a:hover{
                 font-size: 17px;
                 margin-bottom: -15px;
             }
-                
             .cajaDatos1 .datos{
                 display: flex;
                 flex-flow: wrap row;
@@ -125,7 +121,6 @@ nav a:hover{
                 width: 70%;
                 margin-top: -16px;
             }
-                
             .cajaIco{
                 grid-column: 3/4;
                 justify-self: end;
@@ -499,7 +494,7 @@ ul li a:hover{
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 500px){
 
 
 #logo{

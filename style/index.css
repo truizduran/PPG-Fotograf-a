@@ -77,8 +77,8 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation: mainIndex 30s linear infinite 4s;
-          animation: mainIndex 30s linear infinite 4s;
+  -webkit-animation: mainIndex 20s linear infinite 8s;
+          animation: mainIndex 20s linear infinite 8s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
@@ -674,7 +674,7 @@ nav a:hover {
   /* fin query footer */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   #logo {
     padding-top: 50px;
     height: 85px;

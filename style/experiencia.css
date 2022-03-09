@@ -394,7 +394,7 @@ h2 {
   /* fin query footer */
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 500px) {
   /* inicio media query header */
   html, body {
     max-width: 100% !important;

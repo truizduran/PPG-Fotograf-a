@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
 
 
+$color1:#131212;
+$color2:#ffffff;
+$color3:#808080;
+$color4:#232323;
+$color5:#262525;
+
+
+$font1: "Montserrat', sans-serif";
+$font2: uppercase;
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -10,8 +21,8 @@
 .headerOficial{
     height: 170px;
     width: 100%;
-    background-color: #131212;
-
+    background-color: $color1;
+    
 }
 
 #logo{
@@ -48,15 +59,15 @@ nav ul li{
 
 nav a {
     text-decoration: none !important;
-    color: #fff;
+    color: $color2;
     font-size: 23px;
     text-transform: uppercase;
     font-family: "Montserrat', sans-serif";
-    text-shadow: 1px 2px 2px grey;
+    text-shadow: 1px 2px 2px $color1;
 }
 
 nav a:hover{
-    color: #808080;
+    color: $color3;
 }
 
 /* fin css header nav */
@@ -64,8 +75,8 @@ nav a:hover{
 /*  inicio css main sobre mi */
 
 .mainSobreMi{
-    background-color: #262525;
-    height: 110vh;
+    background-color: $color5;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -82,21 +93,18 @@ nav a:hover{
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-
 }
 
 .texto1{
-    color: white;
+    color: $color2;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    padding: 35px;
 }
 
-.cajaMain p{
-    font-size: 22px;
-    padding: 85px;
+.cajaMain img{
+    padding: 15px;
 }
-
-
 
 
 /* incio css footer */
@@ -150,7 +158,7 @@ nav a:hover{
     padding: 5px 0px;
     color: #fff;
     grid-column: 2/3;
-    font-size: 17px;
+    font-size: 13px;
     margin-bottom: -15px;
 }
 
@@ -164,9 +172,50 @@ nav a:hover{
 /* -----inicio media query---------- */
 /* -----inicio media query---------- */
 
+@media only screen and (min-width: 1421px){
+
+header a img{
+        width: 440px;
+        height: 110px;
+    }
+
+    #logo{
+        height: 60%;
+        padding-top: 15px;
+    }
+
+    .headerOficial{
+        height: 170px;
+    }
+
+    .fotoMia{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .mainSobreMi p{
+        width: 90%;
+        padding: 0px 0px 0px 0px !important;
+        margin: 0px 0px 0px 0px !important;
+        font-size: 23px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .texto1{
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul{
+        padding-top: 5px;
+    }
+}
 
 
-@media only screen and (min-width: 1020px){
+
+@media only screen and (min-width: 1024px) and (max-width: 1420px){
 
 /* inicio media query main */
 
@@ -185,7 +234,7 @@ header a img{
     width: 90%;
     padding: 0px 0px 0px 0px !important;
     margin: 0px 0px 0px 0px !important;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     align-items: center;
 }
@@ -328,7 +377,7 @@ nav ul{
 
 }
 
-@media only screen and (max-width: 485px){
+@media only screen and (max-width: 500px){
 
 /* inicio media query header */
 

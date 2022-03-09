@@ -111,7 +111,6 @@ nav a:hover {
 
 input {
   width: 50%;
-  margin-bottom: 10px;
 }
 
 label,
@@ -139,6 +138,7 @@ label,
 .radio {
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-top: 8px;
 }
 
 .radio1,
@@ -162,7 +162,8 @@ label,
 }
 
 .botEnviar {
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -379,7 +380,7 @@ label,
   /* fin query footer */
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 500px) {
   /* inicio media query header */
   .headerOficial {
     display: block;

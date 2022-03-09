@@ -58,11 +58,11 @@ nav ul li {
 
 nav a {
   text-decoration: none !important;
-  color: #fff;
+  color: #ffffff;
   font-size: 23px;
   text-transform: uppercase;
   font-family: "Montserrat', sans-serif";
-  text-shadow: 1px 2px 2px grey;
+  text-shadow: 1px 2px 2px #131212;
 }
 
 nav a:hover {
@@ -73,7 +73,7 @@ nav a:hover {
 /*  inicio css main sobre mi */
 .mainSobreMi {
   background-color: #262525;
-  height: 110vh;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,14 +105,14 @@ nav a:hover {
 }
 
 .texto1 {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  padding: 35px;
 }
 
-.cajaMain p {
-  font-size: 22px;
-  padding: 85px;
+.cajaMain img {
+  padding: 15px;
 }
 
 /* incio css footer */
@@ -183,7 +183,7 @@ nav a:hover {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  font-size: 17px;
+  font-size: 13px;
   margin-bottom: -15px;
 }
 
@@ -194,7 +194,50 @@ nav a:hover {
 /* fin css footer */
 /* -----inicio media query---------- */
 /* -----inicio media query---------- */
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1421px) {
+  header a img {
+    width: 440px;
+    height: 110px;
+  }
+  #logo {
+    height: 60%;
+    padding-top: 15px;
+  }
+  .headerOficial {
+    height: 170px;
+  }
+  .fotoMia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainSobreMi p {
+    width: 90%;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    font-size: 23px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .texto1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav ul {
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1420px) {
   /* inicio media query main */
   header a img {
     width: 440px;
@@ -212,7 +255,7 @@ nav a:hover {
     width: 90%;
     padding: 0px 0px 0px 0px !important;
     margin: 0px 0px 0px 0px !important;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -359,7 +402,7 @@ nav a:hover {
   /* fin query footer */
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 500px) {
   /* inicio media query header */
   html, body {
     max-width: 100% !important;

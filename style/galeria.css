@@ -75,85 +75,96 @@ nav a:hover {
 /* fin css header nav */
 /* inicio css main galeria */
 .mainGaleria {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   background-color: #262525;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[11];
+      grid-template-rows: repeat(11, 1fr);
   padding: 25px;
   grid-gap: 15px;
 }
 
+.mainGaleria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .foto1 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  background-image: url(../media/img/IMG_8844.JPG);
-  background-size: cover;
-  background-position: center;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
 }
 
 .foto2 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  background-image: url(../media/img/IMG_3476.JPG);
-  background-size: cover;
-  background-position: center;
-}
-
-.foto3 {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  background-image: url(../media/img/IMG_2345.JPG);
-  background-size: cover;
-  background-position: top;
-}
-
-.foto4 {
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   grid-column: 5/6;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  background-image: url(../media/img/IMG_9234.JPG);
-  background-size: cover;
-  background-position: center;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.foto3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.foto4 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
 }
 
 .foto5 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  grid-row: 3/5;
-  background-image: url(../media/img/IMG_3733.JPG);
-  background-size: cover;
-  background-position: end;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
 }
 
 .foto6 {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4/6;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  grid-row: 3/5;
-  background-image: url(../media/img/IMG_2543.JPG);
-  background-size: cover;
-  background-position: center;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
+}
+
+.foto8 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
+}
+
+.foto9 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
 }
 
 /* fin css main galeria */
@@ -227,7 +238,7 @@ nav a:hover {
 }
 
 /* fin css footer */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1020px) {
   .headerOficial {
     height: 170px;
   }
@@ -244,26 +255,16 @@ nav a:hover {
     padding-top: 5px;
   }
   /* inicio media query main */
-  .mainGaleria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
-  }
-  .foto1 {
-    background-position-x: 0px;
-  }
-  .foto3 {
-    background-position: initial;
+  .foto7 {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
   }
   .foto2 {
-    background-image: url(../media/img/IMG_9710.JPG);
-    background-position: top;
-  }
-  .foto4 {
-    background-position-x: 470px;
+    display: none;
   }
   /* fin media query main */
   /* inicio media query footer */
@@ -316,14 +317,14 @@ nav a:hover {
   /* fin media query header */
   /* inicio media query main */
   .mainGaleria {
-    height: 280vh;
+    height: 300vh;
     width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 0fr 1fr 0fr;
         grid-template-columns: 0fr 1fr 0fr;
-    -ms-grid-rows: (1fr)[12];
-        grid-template-rows: repeat(12, 1fr);
+    -ms-grid-rows: (1fr)[14];
+        grid-template-rows: repeat(14, 1fr);
     padding: 10px;
   }
   .foto1 {
@@ -333,12 +334,6 @@ nav a:hover {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1/3;
-    background-image: url(../media/img/IMG_8844.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
   }
   .foto2 {
     -ms-grid-column: 2;
@@ -347,24 +342,9 @@ nav a:hover {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3/5;
-    background-image: url(../media/img/IMG_3476.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
   }
   .foto3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    grid-row: 5/7;
-    background-image: url(../media/img/IMG_1932.jpg);
-    background-size: cover;
-    background-position: top;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
+    display: none;
   }
   .foto4 {
     -ms-grid-column: 2;
@@ -373,11 +353,6 @@ nav a:hover {
     -ms-grid-row: 7;
     -ms-grid-row-span: 2;
     grid-row: 7/9;
-    background-image: url(../media/img/IMG_9234.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
   }
   .foto5 {
     -ms-grid-column: 2;
@@ -386,11 +361,6 @@ nav a:hover {
     -ms-grid-row: 9;
     -ms-grid-row-span: 2;
     grid-row: 9/11;
-    background-image: url(../media/img/IMG_3733.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
   }
   .foto6 {
     -ms-grid-column: 2;
@@ -399,11 +369,22 @@ nav a:hover {
     -ms-grid-row: 11;
     -ms-grid-row-span: 2;
     grid-row: 11/13;
-    background-image: url(../media/img/IMG_2543.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 700px 450px;
-    background-repeat: no-repeat;
+  }
+  .foto8 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5/7;
+  }
+  .foto9 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    grid-row: 13/15;
   }
   /* fin media query main */
   /*inicio footer query  */
@@ -503,12 +484,6 @@ nav a:hover {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1/3;
-    background-image: url(../media/img/IMG_8844.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
   .foto2 {
     -ms-grid-column: 2;
@@ -517,24 +492,14 @@ nav a:hover {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3/5;
-    background-image: url(../media/img/IMG_3476.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
-  .foto3 {
+  .foto8 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 5;
     -ms-grid-row-span: 2;
     grid-row: 5/7;
-    background-image: url(../media/img/IMG_1932.jpg);
-    background-size: cover;
-    background-position: top;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
   .foto4 {
     -ms-grid-column: 2;
@@ -543,11 +508,6 @@ nav a:hover {
     -ms-grid-row: 7;
     -ms-grid-row-span: 2;
     grid-row: 7/9;
-    background-image: url(../media/img/IMG_9234.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
   .foto5 {
     -ms-grid-column: 2;
@@ -556,11 +516,6 @@ nav a:hover {
     -ms-grid-row: 9;
     -ms-grid-row-span: 2;
     grid-row: 9/11;
-    background-image: url(../media/img/IMG_3733.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
   .foto6 {
     -ms-grid-column: 2;
@@ -569,11 +524,6 @@ nav a:hover {
     -ms-grid-row: 11;
     -ms-grid-row-span: 2;
     grid-row: 11/13;
-    background-image: url(../media/img/IMG_2543.JPG);
-    background-size: cover;
-    background-position: center;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
   }
   /* fin media query main */
   /* incio media query footer */
